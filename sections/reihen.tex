@@ -1,0 +1,126 @@
+\section{Reihen\formelbuch{420, 427, 1045}}
+
+\subsection{Zahlenreihen\formelbuch{422}}
+$ s_n = \sum\limits_{k=1}^{n} a_k \qquad $ ist eine (unendliche) Reihe. Sie ist die Folge von Partialsummen einer bestehenden Folge $a_n$.
+
+\subsubsection{Konvergenz, Divergenz\formelbuch{422}}
+Konvergiert die Reihe $< s_n >$ gegen die Summe $ s = \sum\limits_{k=1}^{\infty} a_k $ so ist sie konvergent. 
+Existiert der GW nicht, so ist sie divergent.
+
+\subsubsection{Konvergenzkriterien}
+
+\paragraph{Cauchy-Kriterium} 
+Wenn zu jedem $\varepsilon > 0$ ein Index $n_0$ existiert, so dass für alle $m > n > n_0$ gilt: \\
+$\left| \sum\limits_{k=n}^m a_k \right| < \varepsilon$, dann konvergiert die Reihe, ansonsten divergiert sie.
+
+\paragraph{lim = 0\formelbuch{423}}
+Wenn die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ konvergent ist, so ist $\lim\limits_{n \to \infty} a_n = 0$. \hspace{2cm} Aber NICHT UMGEKEHRT!
+
+\paragraph{Divergenz}
+Ist $<a_n>$ divergent oder ist $\lim\limits_{n \to \infty} a_n \neq 0$, so ist die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ divergent.
+
+\paragraph{Majorantenkriterium\formelbuch{429}}
+Ist die Reihe $ \sum\limits_{n=1}^{\infty} c_n $ konvergent, so konvergiert auch die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ für $|a_n| \leq c_n$ (absolut). \\
+Dies gilt auch für $|a_n| \leq c_n$ erst ab einer Stelle $n_0 \in \mathbb{N}$.
+
+\paragraph{Minorantenkriterium}
+Ist die Reihe $ \sum\limits_{n=1}^{\infty} d_n $ gegen $+\infty$ divergent, so gilt dies auch für die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ 
+bei $a_n \geq d_n$. \\ Dies gilt auch für $a_n \geq d_n$ erst ab einer Stelle $n_0 \in \mathbb{N}$.
+
+\paragraph{Reziprokkriterium}
+$ s = \sum\limits_{n=1}^{\infty} \frac{1}{n^\alpha} $ ist konvergent für $\alpha > 1$ und divergent für $\alpha \leq 1$.
+
+\paragraph{Quotientenkriterium\formelbuch{424}}
+$ \lim\limits_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \alpha $ der Reihe $ \sum\limits_{n=1}^{\infty} a_n $ \\
+$\alpha < 1 \Rightarrow$ (absolut) konvergent \hspace{3cm}
+$\alpha > 1 \Rightarrow$ divergent \hspace{4cm} 
+$\alpha = 1 \Rightarrow$ keine Aussage!
+
+\paragraph{Wurzelkriterium\formelbuch{424f}}
+$ \lim\limits_{n \to \infty} \sqrt[n]{\left|a_n\right|} = \alpha $ der Reihe $ \sum\limits_{n=1}^{\infty} a_n $ \\
+$\alpha < 1 \Rightarrow$ (absolut) konvergent\hspace{3cm}
+$\alpha > 1 \Rightarrow$ divergent \hspace{4cm} 
+$\alpha = 1 \Rightarrow$ keine Aussage!
+
+\paragraph{Integralkriterium\formelbuch{425}}
+$ \sum\limits_{n=1}^{\infty} f(n) $ ist konvergent, wenn das uneigentliche Integral $ \int\limits_{1}^{\infty} f(x) dx $ konvergent ist. \\
+Gilt nur, wenn $f$ auf $ [1, \infty) $ definiert und monoton fallend ist. Zudem muss $ f(x) \geq 0 $ für alle $x \in [1, \infty)$ sein.
+ 
+\paragraph{Leibniz-Kriterium\formelbuch{426}}
+Die \textbf{alternierende} Reihe $ \sum\limits_{n=1}^{\infty} a_n $ ist konvergent, wenn die Folge $<\left|a_n\right|>$ eine monoton fallende Nullfolge ($\lim\limits_{n \to \infty}
+\left|a_n\right| = 0 $) ist.
+\\ Monotonie mittels Verhältnis ($ \left|\frac{a_{n+1}}{a_n}\right| $), Differenz ($ |a_{n+1}| - |a_n| $) oder \textit{vollständiger Induktion} beweisen.\\ 
+
+\paragraph{Abschätzung Restglied einer alternierenden konvergenten Reihe\formelbuch{426,430}}\qquad $|R_n| = |s-s_n|\leq |a_{n+1}|$
+
+
+\subsubsection{Bedingte und Absolute Konvergenz\formelbuch{425}}
+Eine Reihe $\sum\limits_{n=1}^{\infty}a_n$ heisst \textbf{absolut konvergent}, wenn die
+Reihe $\sum\limits_{n=1}^{\infty}|a_n|$ konvergent ist.\\
+\textbf{Bedingt Konvergent:} Eine Reihe hat durch Umordnen einen anderen
+Grenzwert oder wird divergent.\\
+\textbf{Unbedingt Konvergent:} Durch Umordnen ändert sich der Grenzwert nicht.
+
+\subsubsection{Produkt von absolut konvergenten Reihen\formelbuch{426}} 
+Gegeben sei: $\sum a_n=a$, \quad $\sum b_n=b, \quad \sum c_n = (\sum a_n) \cdot (\sum b_n) = c \quad $ so ist
+$ \quad c_n=\sum a_kb_{n-k+1} \quad $ und $ \quad c = a \cdot b $
+
+
+
+\subsection{Potenzreihen}
+
+%\paragraph{Definition\formelbuch{432}} 
+
+Die Reihe $ \sum\limits_{n=0}^{\infty} a_n (x-x_0)^n $ heisst Potenzreihe mit Entwicklungspunkt $x_0$ und Koeffizienten $a_n$.
+
+\begin{tabular}{lll}
+\textbf{Geometrische Reihe\formelbuch{19}}
+  & $ \frac{a}{1-x} = a \cdot \sum\limits_{n=0}^{\infty} x^n$
+  & $(|x| < 1) \qquad$ Beidseitiges $\int \quad\Rightarrow\quad -a \cdot \ln{|x-1|} 
+= a \cdot \sum\limits_{n=1}^{\infty} \frac{x^{n}}{n} $ \\
+\textbf{Binominalreihe} 
+  & $ (1+x)^\alpha = \sum\limits_{n=0}^\infty \binom{\alpha}{n} x^n$
+  & $x \in (-1,1)$ \\
+\textbf{Taylor-Reihe\formelbuch{434, 1045}}
+  & $ \sum\limits_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!}\cdot(x-x_0)^n$
+  & Taylor-Reihe von f bezüglich der Stelle $x_0$ \\
+\textbf{E-Funktion}
+  & \multicolumn{2}{l}{$e = \lim\limits_{n\to\infty} \left(1+\frac{1}{n}\right)^n = 
+  \sum\limits_{k=0}^{\infty}{\frac{1}{k!}} = 1 + \frac{1}{1} + \frac{1}{1\cdot 2} +
+  \frac{1}{1\cdot 2\cdot 3}  + \frac{1}{1\cdot 2\cdot 3\cdot4} + \cdots$}
+\end{tabular}
+
+\subsubsection{Konvergenz\formelbuch{432}}
+Gegeben sei die Potenzreihe $ \sum\limits_{n=0}^{\infty} a_n x^n $ mit $ \lim\limits_{n \to \infty} \sqrt[n]{|a_n|} = a $ \\
+Für $ a=0 $ ist die Potenzreihe für alle $ x \in \mathbb{R} $ absolut konvergent. \\
+Für $ a>0 $ ist die Potenzreihe für alle $x$ mit 
+$ \left\{   
+    \begin{array}{l} 
+      |x| < \frac{1}{a} = \rho \Rightarrow \text{ absolut konvergent.} \\
+      |x| > \frac{1}{a} = \rho \Rightarrow \text{ divergent.}
+    \end{array} 
+  \right. $ \\
+Ist die Folge $<\sqrt[n]{|a_n|}>$ nicht beschränkt, so ist die Potenzreihe nur für $x=0$ konvergent.
+
+\subsubsection{Konvergenzradius\formelbuch{432}}
+Jeder Potenzreihe kann ein Konvergenzradius $\rho$ zugeordnet werden. Wobei gilt $\rho = \frac{1}{a}$ mit $a = \lim\limits_{n \to \infty} \sqrt[n]{|a_n|} $. \\
+Für $a = 0$ gilt $\rho = \infty$. Wenn a nicht exisitiert (Folge divergent) ist $\rho = 0$. \\
+Berechnung mittels Quotientenkriterium: $ \rho = \lim\limits_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right|$
+
+\subsubsection{Differentiation}
+Alle Potenzreihen mit einem $\rho > 0$ sind für alle $x \in (-\rho, \rho)$ beliebig oft (gliedweise) differenzierbar. \\
+Der Potenzradius $\rho$ ist bei allen Ableitungen gleich demjenigen der Ursprungsfunktion. $\rho_{f} = \rho_{f^{(i)}}$.
+$$ f(x) = \sum\limits_{n=0}^{\infty} a_n x^n  \qquad 
+   f'(x) = \sum\limits_{n=1}^{\infty} n \cdot a_n x^{n-1 } \qquad 
+   f''(x) = \sum\limits_{n=2}^{\infty} n(n-1) \cdot a_n x^{n-2} \qquad 
+   f^{(i)}(x) = \sum\limits_{n=i}^{\infty} n(n-1)\cdot \ldots \cdot (n-i+1)\cdot a_n x^{n-i} $$ 
+\textbf{Bemerkung:} Startwert ($n=0$) nur erhöhen, wenn bei $x^n, n$ negativ werden würde!
+
+\subsubsection{Integration}
+\paragraph{Unbestimmtes Integral}
+$\int \sum\limits_{n=0}^{\infty} a_n x^n dx = 
+\sum\limits_{n=0}^{\infty} a_n \int x^n dx = 
+\sum\limits_{n=0}^{\infty} \frac{a_n}{n+1}\cdot x^{n+1} \qquad \text{ für alle } x \in (-\rho, \rho).$
+\paragraph{Bestimmtes Integral}
+$\int\limits_0^x \sum\limits_{n=0}^{\infty} a_n t^n dt = 
+\sum\limits_{n=0}^{\infty} \frac{a_n}{n+1}\cdot x^{n+1} \qquad \text{ für alle } x \in (-\rho, \rho).$
