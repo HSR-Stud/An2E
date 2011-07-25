@@ -3,17 +3,16 @@
   
   
   \begin{tabular}{ll}
-    Linearit\"at & $\int{f(\alpha x+\beta )dx=\frac{1}{\alpha}\cdot F(\alpha x+
-    \beta)+C}$ \\
-    Partielle Integration &
-    $\int\limits_a^b{u'(x)\cdot v(x)dx}=\biggl[ u(x)\cdot v(x)
-    \biggr]_a^b-\int\limits_a^b{u(x)\cdot v'(x)dx}$\\ 
+    Linearit\"at & $\int{f(\alpha x+\beta )dx=\frac{1}{\alpha}\cdot F(\alpha x+\beta)+C}$ \\
+    Partielle Integration & $\int\limits_a^b{u'(x)\cdot v(x)dx}=\biggl[
+    u(x)\cdot v(x) \biggr]_a^b-\int\limits_a^b{u(x)\cdot v'(x)dx}$\\
     Substitution (Rationalisierung) & $t=\tan\frac{x}{2}, \qquad
     dx=\frac{2dt}{1+t^2} \qquad \sin  x=\frac{2t}{1+t^2} \qquad \cos x=\frac{1-t^2}{1+t^2}
     \quad\int{R(\sin(x)\cos(x))dx}$\\
     Allgemeine Substitution &
     $\int\limits_{a}^{b}{f(x)dx}=\int\limits_{g^{-1}(a)}^{g^{-1}(b)}{f(g(t))\cdot
-    g'(t)dt}\qquad t=g^{-1}(x)\qquad  \fbox{x=g(t)}\qquad dx=g'(t)\cdot dt$\\ Logarithmische Integration & $\int{\frac{f'(x)}{f(x)}dx}=\ln|f(x)|+C 
+    g'(t)dt}\qquad t=g^{-1}(x)\qquad  \fbox{x=g(t)}\qquad dx=g'(t)\cdot dt$\\
+    Logarithmische Integration & $\int{\frac{f'(x)}{f(x)}dx}=\ln|f(x)|+C 
     \qquad{(f(x)\neq 1)}$\\
     Spezielle Form des Integranden & $\int{f'(x)\cdot (f(x))^{\alpha} dx}=
     f(x)^{\alpha +1}\cdot \frac{1}{\alpha+1}+C
@@ -25,6 +24,41 @@
   
 
 \subsubsection{Einige unbestimmte Integrale \formelbuch{1074 ff}}
+\begin{enumerate}
+  \item $ \int dx=x+C $
+  \item $ \int{x^\alpha}dx=\frac{x^{\alpha+1}}{\alpha+1}+C,\ x \epsilon \mathbb
+  R ^+,\ \alpha \epsilon \mathbb R \backslash \{ -1 \} $
+  \item $ \int{\frac{1}{x}}dx=\ln \left| x \right| + C,\ x\neq0 $
+  \item $ \int{e^x}dx=e^x+C $
+  \item $ \int{a^x}dx=\frac{a^x}{\ln{a}}+C,\ a \epsilon \mathbb
+  R^+\backslash\{1\} $
+  \item $ \int{ \sin{x}} dx = -\cos{x} + C $
+  \item $ \int{\cos{x}} dx = \sin{x} + C $
+  \item $ \int{\frac{dx}{\sin^2x}}=-\cot{x}+C,\ x\neq k\pi\ \mathrm{mit}\ k
+  \epsilon \mathbb Z $
+  \item $ \int{\frac{dx}{\cos^2x}}=\tan{x}+C,\ x\neq\frac{\pi}{2}+k\pi\
+  \mathrm{mit} k \epsilon \mathbb Z $
+  %10. :
+  \item $ \int{\sinh{x}}dx = \cosh{x}+C $
+  \item $ \int{\cosh{x}}dx = \sinh{x}+C $
+  \item $ \int{\frac{dx}{\sinh^2x}}=-\coth{x}+C,\ x\neq0 $
+  \item $ \int{\frac{dx}{\cosh^2x}}=\tanh{x}+C $
+  \item $ \int{\frac{dx}{ax+b}} = \frac{1}{a}\ln \left|ax + b\right| + C,\
+  a\neq 0,x\neq-\frac{b}{a} $
+  \item $ \int{\frac{dx}{a^2x^2+b^2}}=\frac{1}{ab}\arctan{\frac{a}{b}x}+C,\
+  a\neq0,\ b\neq0 $
+  \item $
+  \int{\frac{dx}{a^2x^2-b^2}}=\frac{1}{2ab}\ln{\left|\frac{ax-b}{ax+b}\right|}+C,\ a\neq0,\ b\neq0,\ x\neq\frac{b}{a},\ x\neq-\frac{b}{a} $
+  \item $
+  \int{\sqrt{a^2x^2+b^2}}dx=\frac{x}{2}\sqrt{a^2x^2+b^2}+\frac{b^2}{2a}\ln{(ax+\sqrt{a^2x^2+b^2})}+C,\
+  a\neq0,\ b\neq0 $
+  \item $
+  \int{\sqrt{a^2x^2-b^2}}dx=\frac{x}{2}\sqrt{a^2x^2-b^2}-\frac{b^2}{2a}\ln\left|ax+\sqrt{a^2x^2-b^2}\right|+C,\
+  a\neq0,\ b\neq0,a^2x^2\geqq b^2$
+\end{enumerate}
+
+
+
 \includegraphics[width=17.7cm]{./bilder/integrale.png} 
 
   Uneigentliches Integral heisst, dass entweder eine \textbf{unbeschränkte
