@@ -1,9 +1,9 @@
-\section{Reihen\formelbuch{420, 427, 1045}}
+\section{Reihen\formelbuch{460, 465, 1066}}
 
-\subsection{Zahlenreihen\formelbuch{422}}
+\subsection{Zahlenreihen\formelbuch{460}}
 $ s_n = \sum\limits_{k=1}^{n} a_k \qquad $ ist eine (unendliche) Reihe. Sie ist die Folge von Partialsummen einer bestehenden Folge $a_n$.
 
-\subsubsection{Konvergenz, Divergenz\formelbuch{422}}
+\subsubsection{Konvergenz, Divergenz\formelbuch{460}}
 Konvergiert die Reihe $< s_n >$ gegen die Summe $ s = \sum\limits_{k=1}^{\infty} a_k $ so ist sie konvergent. 
 Existiert der GW nicht, so ist sie divergent.
 
@@ -13,13 +13,13 @@ Existiert der GW nicht, so ist sie divergent.
 Wenn zu jedem $\varepsilon > 0$ ein Index $n_0$ existiert, so dass für alle $m > n > n_0$ gilt: \\
 $\left| \sum\limits_{k=n}^m a_k \right| < \varepsilon$, dann konvergiert die Reihe, ansonsten divergiert sie.
 
-\paragraph{lim = 0\formelbuch{423}}
+\paragraph{lim = 0\formelbuch{461}}
 Wenn die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ konvergent ist, so ist $\lim\limits_{n \to \infty} a_n = 0$. \hspace{2cm} Aber NICHT UMGEKEHRT!
 
 \paragraph{Divergenz}
 Ist $<a_n>$ divergent oder ist $\lim\limits_{n \to \infty} a_n \neq 0$, so ist die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ divergent.
 
-\paragraph{Majorantenkriterium\formelbuch{429}}
+\paragraph{Majorantenkriterium\formelbuch{469}}
 Ist die Reihe $ \sum\limits_{n=1}^{\infty} c_n $ konvergent, so konvergiert auch die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ für $|a_n| \leq c_n$ (absolut). \\
 Dies gilt auch für $|a_n| \leq c_n$ erst ab einer Stelle $n_0 \in \mathbb{N}$.
 
@@ -30,38 +30,39 @@ bei $a_n \geq d_n$. \\ Dies gilt auch für $a_n \geq d_n$ erst ab einer Stelle $
 \paragraph{Reziprokkriterium}
 $ s = \sum\limits_{n=1}^{\infty} \frac{1}{n^\alpha} $ ist konvergent für $\alpha > 1$ und divergent für $\alpha \leq 1$.
 
-\paragraph{Quotientenkriterium\formelbuch{424}}
+\paragraph{Quotientenkriterium\formelbuch{464}}
 $ \lim\limits_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \alpha $ der Reihe $ \sum\limits_{n=1}^{\infty} a_n $ \\
 $\alpha < 1 \Rightarrow$ (absolut) konvergent \hspace{3cm}
 $\alpha > 1 \Rightarrow$ divergent \hspace{4cm} 
 $\alpha = 1 \Rightarrow$ keine Aussage!
 
-\paragraph{Wurzelkriterium\formelbuch{424f}}
+\paragraph{Wurzelkriterium\formelbuch{464f}}
 $ \lim\limits_{n \to \infty} \sqrt[n]{\left|a_n\right|} = \alpha $ der Reihe $ \sum\limits_{n=1}^{\infty} a_n $ \\
 $\alpha < 1 \Rightarrow$ (absolut) konvergent\hspace{3cm}
 $\alpha > 1 \Rightarrow$ divergent \hspace{4cm} 
 $\alpha = 1 \Rightarrow$ keine Aussage!
 
-\paragraph{Integralkriterium\formelbuch{425}}
+\paragraph{Integralkriterium\formelbuch{465}}
 $ \sum\limits_{n=1}^{\infty} f(n) $ ist konvergent, wenn das uneigentliche Integral $ \int\limits_{1}^{\infty} f(x) dx $ konvergent ist. \\
 Gilt nur, wenn $f$ auf $ [1, \infty) $ definiert und monoton fallend ist. Zudem muss $ f(x) \geq 0 $ für alle $x \in [1, \infty)$ sein.
  
-\paragraph{Leibniz-Kriterium\formelbuch{426}}
+\paragraph{Leibniz-Kriterium\formelbuch{466}}
 Die \textbf{alternierende} Reihe $ \sum\limits_{n=1}^{\infty} a_n $ ist konvergent, wenn die Folge $<\left|a_n\right|>$ eine monoton fallende Nullfolge ($\lim\limits_{n \to \infty}
 \left|a_n\right| = 0 $) ist.
 \\ Monotonie mittels Verhältnis ($ \left|\frac{a_{n+1}}{a_n}\right| $), Differenz ($ |a_{n+1}| - |a_n| $) oder \textit{vollständiger Induktion} beweisen.\\ 
 
-\paragraph{Abschätzung Restglied einer alternierenden konvergenten Reihe\formelbuch{426,430}}\qquad $|R_n| = |s-s_n|\leq |a_{n+1}|$
+\paragraph{Abschätzung Restglied einer alternierenden konvergenten
+Reihe\formelbuch{466,470}}\qquad $|R_n| = |s-s_n|\leq |a_{n+1}|$
 
 
-\subsubsection{Bedingte und Absolute Konvergenz\formelbuch{425}}
+\subsubsection{Bedingte und Absolute Konvergenz\formelbuch{465}}
 Eine Reihe $\sum\limits_{n=1}^{\infty}a_n$ heisst \textbf{absolut konvergent}, wenn die
 Reihe $\sum\limits_{n=1}^{\infty}|a_n|$ konvergent ist.\\
 \textbf{Bedingt Konvergent:} Eine Reihe hat durch Umordnen einen anderen
 Grenzwert oder wird divergent.\\
 \textbf{Unbedingt Konvergent:} Durch Umordnen ändert sich der Grenzwert nicht.
 
-\subsubsection{Produkt von absolut konvergenten Reihen\formelbuch{426}} 
+\subsubsection{Produkt von absolut konvergenten Reihen\formelbuch{466}} 
 Gegeben sei: $\sum a_n=a$, \quad $\sum b_n=b, \quad \sum c_n = (\sum a_n) \cdot (\sum b_n) = c \quad $ so ist
 $ \quad c_n=\sum a_kb_{n-k+1} \quad $ und $ \quad c = a \cdot b $
 
@@ -81,7 +82,7 @@ Die Reihe $ \sum\limits_{n=0}^{\infty} a_n (x-x_0)^n $ heisst Potenzreihe mit En
 \textbf{Binominalreihe} 
   & $ (1+x)^\alpha = \sum\limits_{n=0}^\infty \binom{\alpha}{n} x^n$
   & $x \in (-1,1)$ \\
-\textbf{Taylor-Reihe\formelbuch{434, 1045}}
+\textbf{Taylor-Reihe\formelbuch{474}}
   & $ \sum\limits_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!}\cdot(x-x_0)^n$
   & Taylor-Reihe von f bezüglich der Stelle $x_0$ \\
 \textbf{E-Funktion}
@@ -90,7 +91,7 @@ Die Reihe $ \sum\limits_{n=0}^{\infty} a_n (x-x_0)^n $ heisst Potenzreihe mit En
   \frac{1}{1\cdot 2\cdot 3}  + \frac{1}{1\cdot 2\cdot 3\cdot4} + \cdots$}
 \end{tabular}
 
-\subsubsection{Konvergenz\formelbuch{432}}
+\subsubsection{Konvergenz\formelbuch{472}}
 Gegeben sei die Potenzreihe $ \sum\limits_{n=0}^{\infty} a_n x^n $ mit $ \lim\limits_{n \to \infty} \sqrt[n]{|a_n|} = a $ \\
 Für $ a=0 $ ist die Potenzreihe für alle $ x \in \mathbb{R} $ absolut konvergent. \\
 Für $ a>0 $ ist die Potenzreihe für alle $x$ mit 
@@ -102,7 +103,7 @@ $ \left\{
   \right. $ \\
 Ist die Folge $<\sqrt[n]{|a_n|}>$ nicht beschränkt, so ist die Potenzreihe nur für $x=0$ konvergent.
 
-\subsubsection{Konvergenzradius\formelbuch{432}}
+\subsubsection{Konvergenzradius\formelbuch{472}}
 Jeder Potenzreihe kann ein Konvergenzradius $\rho$ zugeordnet werden. Wobei gilt $\rho = \frac{1}{a}$ mit $a = \lim\limits_{n \to \infty} \sqrt[n]{|a_n|} $. \\
 Für $a = 0$ gilt $\rho = \infty$. Wenn a nicht exisitiert (Folge divergent) ist $\rho = 0$. \\
 Berechnung mittels Quotientenkriterium: $ \rho = \lim\limits_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right|$
