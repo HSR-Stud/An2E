@@ -180,6 +180,47 @@ Falls bei $\kappa'(x)$ an der Stelle $x_0$ ein Vorzeichenwechsel besteht, existi
 eine Extremalstelle. 
 
 \subsection{Wichtige Formeln\formelbuch{FF S60}}
+\begin{tabular}{|p{4cm}|l|l|l|}
+ \hline
+ Geometrischer Begriff& karthesische Koordianten & Parameter Darstellung &
+ Polarkoordinaten\\
+ \hline
+ Anstieg in $P_0$ $\in$ C & $f'(x_0)$ & $\frac{\dot \psi(t_0)}{\dot
+ \varphi(t_0)}$ & $\frac{f'(\varphi_0)\sin \varphi_0 + f(\varphi_0)\cos
+ \varphi_0}{f'(\varphi_0)\cos \varphi_0 - f(\varphi_0)\sin \varphi_0}$\\
+ \hline
+ Bogenl\"ange zwischen $P_1$,$P_2$ $\in$ C & $\int \limits{_a}^b
+ \sqrt{1+(f'(x))^2}dx$ & $\int\limits_{t_2}^{t_2} \sqrt{\dot \varphi^2 + \dot\psi^2(t)}dt$ & 
+ $\int\limits_{\varphi_1}^{\varphi_2}\sqrt{(f'(\varphi))^2+(f(\varphi))^2}d\varphi$\\
+ \hline
+ Kr\"umung in $P_0$ $\in$ C & $\frac{f''(x_0)}{(\sqrt{1+(f'(x_0))^2})^3}$ & 
+  $\frac{\dot\varphi(t_0)\ddot
+  \psi(t_0)-\dot\psi(t_0)\ddot\varphi(t_0)}{(\sqrt{\dot\varphi(t_0))^2+(\dot\psi(t_0))^2})`3}$&
+  $\frac{2(f'(\varphi))^2-f(\varphi_0)f''(\varphi)+(f(\varphi_0))^2}{(\sqrt{(f'(\varphi_0))^2
+  + (f(\varphi_0))^2})^3}$
+  \\
+ \hline 
+ Fl\"acheninhalt einer Fl\"ache mit dem Rand C & $\int \limits_{b}^{a} f(x)dx)$ &
+ $\frac{1}{2}\int\limits_{t_1}^{t_2}[\varphi(t)\dot\psi(t)-\dot\varphi(t)\psi(t)]dt$
+ & $\frac{1}{2}\int\limits_{\varphi_1}^{\varphi_2}(f(\varphi))^2d\varphi$ \\
+ \hline
+ Volumen eines Rotationsk\"orpers mit dem Meridian C &
+ $\pi\int\limits_{a}^{b}(f(x))^2dx$ &
+ $\pi\left|\int\limits_{t_1}{t_2}(\psi(t))^2\dot\varphi(t)dt\right|$ &
+ $\pi\left|\int\limits_{\varphi_1}^{\varphi_2}f^2(\varphi)\sin ^2
+ \varphi[f'(\varphi)\cos \varphi - f(\varphi)\sin \varphi ]d \varphi \right|$
+ \\
+ \hline
+ Oberl\"acheninhalt eines Rotationsk\"orpers mit dem Meridian C &
+ $2\pi\int\limits_{a}^{b}\left|f(x)\right|\sqrt{(1+(f'(x))^2}dx$ &
+ $2\pi\int\limits_{t_1}^{t_2}\left|\psi(t)\right|\sqrt{\dot\varphi^2(t)+\dot\psi^2(t)}dt$
+ &
+ $2\pi\int\limits_{\varphi_1}^{\varphi_2}\left|f(\varphi)\sin
+ \varphi\right|\sqrt{(f'(\varphi))^2+(f(\varphi))^2}d\varphi$
+ \\
+ \hline
+\end{tabular}
+
 %  \renewcommand{\arraystretch}{2}
 %  \begin{tabular}[c]{ | p{5.1cm} | p{5.4cm} | l | }
 %    \hline
