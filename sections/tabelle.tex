@@ -2,43 +2,45 @@
 \begin{sidewaystable}
 \section{Anhang: Tabellen}
 \subsection{Wichtige Formeln\formelbuch{FF S60}}
-\begin{tabular}{|p{8.6cm}|l|l|l|}
+\begin{tabular}{|p{6.5cm}|l|l|l|}
  \hline
  Geometrischer Begriff& karthesische Koordianten & Parameter Darstellung &
  Polarkoordinaten\\
  \hline
- Anstieg in $P_0$ $\in$ C & $f'(x_0)$ & $\frac{\dot \psi(t_0)}{\dot
- \varphi(t_0)}$ & $\frac{f'(\varphi_0)\sin \varphi_0 + f(\varphi_0)\cos
+ Anstieg in $P_0$ $\in$ C &
+ $y'=f'(x_0)$ &
+ $ y'=\frac{\dot y}{\dot x}y''=\frac{\dot x \ddot y - \dot y \ddot x}{\dot x^3}$ &
+ $y'=\frac{f'(\varphi_0)\sin \varphi_0 + f(\varphi_0)\cos
  \varphi_0}{f'(\varphi_0)\cos \varphi_0 - f(\varphi_0)\sin \varphi_0}$\\
  \hline
- Bogenl\"ange zwischen $P_1$,$P_2$ $\in$ C & $\int \limits{_a}^b
- \sqrt{1+(f'(x))^2}dx$ & $\int\limits_{t_2}^{t_2} \sqrt{\dot \varphi^2 + \dot\psi^2(t)}dt$ & 
- $\int\limits_{\varphi_1}^{\varphi_2}\sqrt{(f'(\varphi))^2+(f(\varphi))^2}d\varphi$\\
+ Bogenl\"ange zwischen $P_1$,$P_2$ $\in$ C &
+ $s=\int \limits{_a}^b\sqrt{1+(f'(x))^2}dx$ &
+ $\left|s \right|=\int\limits_{t_1}^{t_2} \sqrt{\dot x^2 + \dot y^2(t)}dt$ & 
+ $\left|s \right|=\int\limits_{\varphi_1}^{\varphi_2}\sqrt{(f'(\varphi))^2+(f(\varphi))^2}d\varphi$\\
  \hline
- Kr\"umung in $P_0$ $\in$ C & $\frac{f''(x_0)}{(\sqrt{1+(f'(x_0))^2})^3}$ & 
-  $\frac{\dot\varphi(t_0)\ddot
-  \psi(t_0)-\dot\psi(t_0)\ddot\varphi(t_0)}{(\sqrt{\dot\varphi(t_0))^2+(\dot\psi(t_0))^2})`3}$&
-  $\frac{2(f'(\varphi))^2-f(\varphi_0)f''(\varphi)+(f(\varphi_0))^2}{(\sqrt{(f'(\varphi_0))^2
-  + (f(\varphi_0))^2})^3}$
-  \\
+ Kr\"umung in $P_0$ $\in$ C &
+ $\kappa=\frac{f''(x_0)}{(\sqrt{1+(f'(x_0))^2})^3}$ & 
+ $\kappa=\frac{\dot x(t_0)\ddot y(t_0)-\dot y(t_0)\ddot x(t_0)}{(\sqrt{\dot
+ x(t_0))^2+(\dot y(t_0))^2})`3}$&
+ $\kappa=\frac{2(f'(\varphi))^2-f(\varphi_0)f''(\varphi)+(f(\varphi_0))^2}{(\sqrt{(f'(\varphi_0))^2+(f(\varphi_0))^2})^3}$\\
  \hline 
- Fl\"acheninhalt einer Fl\"ache mit dem Rand C & $\int \limits_{b}^{a} f(x)dx)$ &
- $\frac{1}{2}\int\limits_{t_1}^{t_2}[\varphi(t)\dot\psi(t)-\dot\varphi(t)\psi(t)]dt$
- & $\frac{1}{2}\int\limits_{\varphi_1}^{\varphi_2}(f(\varphi))^2d\varphi$ \\
+ Fl\"acheninhalt einer Fl\"ache mit dem Rand C &
+ $A=\int \limits_{b}^{a} f(x)dx)$ &
+ $A=\frac{1}{2}\int\limits_{t_1}^{t_2}[x(t)\dot y(t)-\dot x(t)y(t)]dt$&
+ $A=\frac{1}{2}\int\limits_{\varphi_1}^{\varphi_2}(f(\varphi))^2d\varphi$ \\
  \hline
  Volumen eines Rotationsk\"orpers mit dem Meridian C &
- $\pi\int\limits_{a}^{b}(f(x))^2dx$ &
- $\pi\left|\int\limits_{t_1}{t_2}(\psi(t))^2\dot\varphi(t)dt\right|$ &
- $\pi\left|\int\limits_{\varphi_1}^{\varphi_2}f^2(\varphi)\sin ^2
+ $V=\pi\int\limits_{a}^{b}(f(x))^2dx$ &
+ $V=\pi\left|\int\limits_{t_1}^{t_2}(y(t))^2\dot x(t)dt\right|$ &
+ $V=\pi\left|\int\limits_{\varphi_1}^{\varphi_2}f^2(\varphi)\sin^2
  \varphi[f'(\varphi)\cos \varphi - f(\varphi)\sin \varphi ]d \varphi \right|$
  \\
  \hline
  Oberl\"acheninhalt eines Rotationsk\"orpers mit dem Meridian C &
- $2\pi\int\limits_{a}^{b}\left|f(x)\right|\sqrt{(1+(f'(x))^2}dx$ &
- $2\pi\int\limits_{t_1}^{t_2}\left|\psi(t)\right|\sqrt{\dot\varphi^2(t)+\dot\psi^2(t)}dt$
- &
- $2\pi\int\limits_{\varphi_1}^{\varphi_2}\left|f(\varphi)\sin
- \varphi\right|\sqrt{(f'(\varphi))^2+(f(\varphi))^2}d\varphi$
+ $O=2\pi\int\limits_{a}^{b}\left|f(x)\right|\sqrt{(1+(f'(x))^2}dx$ &
+ $O=2\pi\int\limits_{t_1}^{t_2}\left|y(t)\right|\sqrt{\dot
+ x^2(t)+\dot y^2(t)}dt$&
+ $O=2\pi\int\limits_{\varphi_1}^{\varphi_2}\left|f(\varphi)\sin\varphi\right|\sqrt{(f'(\varphi))^2+(f(\varphi))^2}d\varphi$
  \\
  \hline
 \end{tabular}
@@ -126,13 +128,11 @@
     a\neq0,\ b\neq0 $  \\ \hline
      $ \int e^{ax}\cos bxdx=\frac{e^{ax}}{a^2+b^2}(a\cos bx + b\sin bx)+C,\
     a\neq0,\ b\neq0 $ &
-     $ \int\ln x dx = x(\ln x-1)+C,\ x\epsilon\mathbb R^+ $ \\hline
+     $ \int\ln x dx = x(\ln x-1)+C,\ x\epsilon\mathbb R^+ $ \\ \hline
      $ \int x^\alpha \cdot \ln xdx =
     \frac{x^{\alpha+1}}{(\alpha+1)^2}\lbrack(\alpha+1)\ln x-1\rbrack + C,\
     x\epsilon\mathbb R^+,\ \alpha\epsilon\mathbb R\backslash\{-1\} $ & \\ \hline
     %FF1 Seite 496
     
-
-
 \end{tabular}
 \end{sidewaystable}
