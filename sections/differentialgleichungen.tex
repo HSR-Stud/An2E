@@ -42,7 +42,8 @@ Koeffizienten \formelbuch{564}}
 \textbf{Inhomogene Differentialgleichung:} $f(x)\neq 0$
 \end{tabular}
 
-\subsubsection{Allgemeine Lösung einer homogenen DGL:\quad\subsubadd{$\quad Y_H$}}
+\subsubsection{Allgemeine L"osung einer homogenen DGL:\quad\subsubadd{$\quad
+Y_H$}}
 \textbf{Charakteristisches Polynom}
 $\qquad\underline{\lambda^2+a_1\cdot\lambda+a_0=0}$ \hspace{1cm}von
 $\qquad\underline{y''+a_1\cdot y'+a_0\cdot y=0}$ 
@@ -56,16 +57,18 @@ Falls $\lambda_{1,2}=-\frac{a_1}{2}\pm j\alpha$:          &
 $Y_H=e^{-\frac{1}{2}a_1x}(A_1cos(\alpha x) +A_2sin(\alpha x))$\\
 \end{tabular}
 
-\subsubsection{Allgemeine Lösung einer inhomogenen DGL:\quad\subsubadd{$y=Y_H+y_P$}}
+\subsubsection{Allgemeine L"osung einer inhomogenen
+DGL:\quad\subsubadd{$y=Y_H+y_P$}}
 
-\subsubsection{Grundlöseverfahren einer inhomogenen DGL:\quad\subsubadd{$\quad y_P$}}
-Homogene DGL: $y''+a_1\cdot y'+a_0\cdot y=0$  für die  $g(x_0)=0$  und
+\subsubsection{Grundl"oseverfahren einer inhomogenen DGL:\quad\subsubadd{$\quad
+y_P$}} Homogene DGL: $y''+a_1\cdot y'+a_0\cdot y=0$  f"ur die  $g(x_0)=0$  und
 $g'(x_0)=1$  gilt, ist:\\
 $$y_P(x)=\int\limits_{x_o}^{x} g(x+x_0-t)\cdot f(t)dt$$\\
-die partikuläre Lösung von $y''+a_1\cdot y'+a_0\cdot y=f(x)$
+die partikul"are L"osung von $y''+a_1\cdot y'+a_0\cdot y=f(x)$
 
-\subsubsection{Der Ansatz einer inh. DGL in Form des Störgliedes:\quad\subsubadd{$\quad y_P$}}
-$f(x)=p_n(x)$\hspace{9cm}($p_n(x)$ und $q_n(x)$ sind Polynome vom gleichen Grad)\\
+\subsubsection{Der Ansatz einer inh. DGL in Form des
+St"orgliedes:\quad\subsubadd{$\quad y_P$}} $f(x)=p_n(x)$\hspace{9cm}($p_n(x)$
+und $q_n(x)$ sind Polynome vom gleichen Grad)\\
 \begin{tabular}{p{8cm}p{4cm}}
 Fall a: $a_0\neq 0$:          & $y_P = q_n(x)$\\
 Fall b: $a_0 = 0 , a_1\neq 0$:& $y_P=x\cdot a_n(x)$\\
@@ -88,9 +91,9 @@ $y_P=e^{bx}\cdot x^2\cdot q_n(x)$\\
 \subsubsection{Superpositionsprinzip}
 $f(x)=c_1f_1(x)+c_2f_2(x)$\\
 \begin{tabular}{p{8cm}p{4cm}}
-$y_1$ ist spezielle Lösung der DGL &
+$y_1$ ist spezielle L"osung der DGL &
 $y''+a_1\cdot y'+a_0\cdot y=c_1f_1(x)$ \\
-$y_2$ ist spezielle Lösung der DGL &
+$y_2$ ist spezielle L"osung der DGL &
 $y''+a_1\cdot y'+a_0\cdot y=c_2f_2(x)$ \\
 dann ist:                          &
 $y_P=c_1y_1+c_2y_2$\\
@@ -107,22 +110,23 @@ $g=c_1g_1+c_2g_2+\ldots +c_kg_k$\\
 
 \subsubsection{Homogene Lösungen}
 \begin{tabular}{lll}
-Fall a: r reelle Lösungen $\lambda_1$: 
+Fall a: r reelle L"osungen $\lambda_1$: 
   & $y_1=e^{\lambda_1x}$, $y_2=xe^{\lambda_1x}$, \ldots
   ,$y_r=x^{r-1}e^{\lambda_1x}$ 
-  & Starke Dämpfung / Kriechfall\\
-Fall b: $k$ komplexe Lösungen $\lambda_2=\alpha +j\beta$: 
+  & Starke D"ampfung / Kriechfall\\
+Fall b: $k$ komplexe L"osungen $\lambda_2=\alpha +j\beta$: 
   &$y_1=e^{\alpha x}\cos(\beta x)$, \ldots, $y_k=e^{\alpha x}x^{k-1}\cos(\beta
 x)$
-  & Schwache Dämpfung /\\
+  & Schwache D"ampfung /\\
   &$y_{k+1}=e^{\alpha x}\sin(\beta x)$, \ldots, $y_{2k}=e^{\alpha
 x}x^{k-1}\sin(\beta x)$
   & Schwingfall\\
 \end{tabular}
 
-\subsubsection{Allgemeinste Lösung des partikulären Teils:}
+\subsubsection{Allgemeinste L"osung des partikul"aren Teils:}
 $$\underbrace{\sum_{k=0}^n a_k y^{(k)}}_{f(y,y',y'',\ldots)} = \underbrace{e^{\alpha x} (p_{m1}(x) \cos (\beta x) + q_{m2}(x) \sin (\beta x))}_{\text{Störglied}}$$
-Unterscheide die Lösungen des charakteristischen Polynoms ($\lambda$):\hspace{5.5cm}mit m = max(m1, m2)\\
+Unterscheide die L"osungen des charakteristischen Polynoms
+($\lambda$):\hspace{5.5cm}mit m = max(m1, m2)\\
 \begin{tabular}{p{8cm}p{8.5cm}}
 Fall a: $\alpha + j\beta \neq \lambda$, so ist &
 $y_P = e^{\alpha x}(r_m(x)\cos(\beta x) + s_m(x) \sin(\beta x))$\\
@@ -143,7 +147,7 @@ g^{(n-1)}(x_0)= & 1 & = & c_1g_1^{(n-1)}(x_0)+c_2g_2^{(n-1)}(x_0)+\ldots
 +c_ng_n^{(n-1)}(x_0)
 \end{pmatrix}$ &
 \begin{minipage}[t]{5cm}
-ergibt $c_1,\ldots ,c_n$ für\\
+ergibt $c_1,\ldots ,c_n$ f"ur\\
 $y_{P}(x)=\int_{x_0}^x{g(x+x_0-t)f(t)dt}$
 \end{minipage}
 \end{tabular}
@@ -170,7 +174,7 @@ Koeffizienten}
 $\dot{x}=ax+by+f(t)$\\
 &
 $\dot{y}=cx+dy+g(t)$\\
-\textbf{Die allgem. Lösung ergibt sich aus der DGL:}&
+\textbf{Die allgem. L"osung ergibt sich aus der DGL:}&
 $\ddot{x}-(a+d)\dot{x}+(ad-bc)x=\dot{f}(t)-df(t)+bg(t)$\\
 &
 $y=\frac{1}{b}(\dot{x}-ax-f(t)))$\\
