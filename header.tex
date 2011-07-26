@@ -1,7 +1,20 @@
-%Angaben zum Dokument
-\newcommand*\myauthor{Damian & Gian Claudio Köppel}
-\newcommand*\mytitle{An2E Zusammenfassung}
-\newcommand*\mydate{25.07.2011}
+
+%Dokumentinformationen
+\newcommand{\titleinfo}{Analysis 2E - Formelsammlung}
+\newcommand{\authorinfo}{D. und G. K\"oppel, basierend auf Sammlung von F.
+Braun, L. Schmid, U. Giger, R. Koller, E. Ammann, S. Arnold}
+\newcommand{\versioninfo}{$Revision: 2.0 $}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Neue Befehle und Definitionen                
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\formelbuch}[1]{$_{\textcolor{red}{\mbox{\small{S#1}}}}$}
+\newcommand{\verweis}[2]{\small{(siehe auch \ref{#1}, #2 (S. \pageref{#1}))}}
+\newcommand{\subsubadd}[1]{\textcolor{black}{\mbox{#1}}}
+
 
 
 
@@ -42,3 +55,8 @@
 \fancyfoot[L]{\footnotesize{\authorinfo}}
 %Fusszeile rechts bzw. ausen
 \fancyfoot[R]{\footnotesize{\today}}
+
+\definecolor{black}{rgb}{0,0,0}
+\definecolor{red}{rgb}{1,0,0}
+\definecolor{white}{rgb}{1,1,1}
+\definecolor{grey}{rgb}{0.8,0.8,0.8}
