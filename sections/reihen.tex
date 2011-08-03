@@ -29,6 +29,9 @@ harmonisch Reihe mit $\langle s_n \rangle$ mit
 \frac{1}{k}=1+\frac{1}{2}+\frac{1}{3}+\dotsc+\frac{1}{n}$}
 \subsubsection{Konvergenzkriterien}
 
+Eine konvergente oder divergente Reihe bleibt konvergent oder divergent auch wenn man endlich viele Summanden entfernt!
+Abschätzung Restglied = Fehlerabschätzung. \\
+
 \paragraph{Cauchy-Kriterium} 
   Wenn zu jedem $\varepsilon > 0$ ein Index $n_0$ existiert, so dass f"ur alle
   $m > n > n_0$ gilt: \\ $\left| \sum\limits_{k=n}^m a_k \right| < \varepsilon$, dann konvergiert die Reihe, ansonsten divergiert sie.
@@ -76,7 +79,8 @@ Integral $ \int\limits_{1}^{\infty} f(x) dx $ konvergent ist. \\ Gilt nur, wenn 
   Differenz ($ |a_{n+1}| - |a_n| $) oder \textit{vollst"andiger Induktion} beweisen.\\
 
 \paragraph{Absch"atzung Restglied einer alternierenden konvergenten
-  Reihe\formelbuch{466,470}}\qquad $|R_n| = |s-s_n|\leq |a_{n+1}|$
+  Reihe\formelbuch{466,470} (Fehlerabsch"zung)}\qquad $|R_n| = |s-s_n|\leq
+  |a_{n+1}|$
 
 
 \subsubsection{Bedingte und Absolute Konvergenz\formelbuch{465}}
@@ -97,7 +101,8 @@ Grenzwert oder wird divergent.\\
 \paragraph{Definition\formelbuch{432}} 
 
   Die Reihe $ \sum\limits_{n=0}^{\infty} a_n (x-x_0)^n $ heisst Potenzreihe mit
-Entwicklungspunkt $x_0$ und Koeffizienten $a_n$.
+Entwicklungspunkt $x_0$ und Koeffizienten $a_n$. Die durch Differentiation
+entstehende Potenzreihe hat denselben Konvergenzradius wie die ursprüngliche. \\
 
 \begin{tabular}{l l l}
 \textbf{Geometrische Reihe\formelbuch{19}}
@@ -136,8 +141,10 @@ gilt $\rho = \frac{1}{a}$ mit $a = \lim\limits_{n \to \infty} \sqrt[n]{|a_n|} $.
 
 \subsubsection{Differentiation}
   Alle Potenzreihen mit einem $\rho > 0$ sind f"ur alle $x \in (-\rho, \rho)$
-beliebig oft (gliedweise) differenzierbar. \\ Der Potenzradius $\rho$ ist bei allen Ableitungen gleich demjenigen der Ursprungsfunktion. $\rho_{f} = \rho_{f^{(i)}}$.
-$$ f(x) = \sum\limits_{n=0}^{\infty} a_n x^n  \qquad 
+beliebig oft (gliedweise) differenzierbar. \\ Der Potenzradius $\rho$ ist bei
+allen Ableitungen gleich demjenigen der Ursprungsfunktion. $\rho_{f} =
+\rho_{f^{(i)}}$.\\ Potenzreihe. Die durch Differentiation entstehende Potenzreihe hat denselben Konvergenzradius wie die ursprüngliche Potenzreihe.\\
+   $$ f(x) = \sum\limits_{n=0}^{\infty} a_n x^n  \qquad 
    f'(x) = \sum\limits_{n=1}^{\infty} n \cdot a_n x^{n-1 } \qquad 
    f''(x) = \sum\limits_{n=2}^{\infty} n(n-1) \cdot a_n x^{n-2} \qquad 
    f^{(i)}(x) = \sum\limits_{n=i}^{\infty} n(n-1)\cdot \ldots \cdot (n-i+1)\cdot a_n x^{n-i} $$ 
@@ -148,7 +155,7 @@ werden w"urde!
  \paragraph{Unbestimmtes Integral}
 $\int \sum\limits_{n=0}^{\infty} a_n x^n dx = 
 \sum\limits_{n=0}^{\infty} a_n \int x^n dx = 
-\sum\limits_{n=0}^{\infty} \frac{a_n}{n+1}\cdot x^{n+1} \qquad \text{ fÃ¼r alle } x \in (-\rho, \rho).$
+\sum\limits_{n=0}^{\infty} \frac{a_n}{n+1}\cdot x^{n+1} \qquad \text{ f"ur alle } x \in (-\rho, \rho).$
 \paragraph{Bestimmtes Integral}
 $\int\limits_0^x \sum\limits_{n=0}^{\infty} a_n t^n dt = 
-\sum\limits_{n=0}^{\infty} \frac{a_n}{n+1}\cdot x^{n+1} \qquad \text{ fÃ¼r alle } x \in (-\rho, \rho).$
+\sum\limits_{n=0}^{\infty} \frac{a_n}{n+1}\cdot x^{n+1} \qquad \text{ f"ur alle } x \in (-\rho, \rho).$
