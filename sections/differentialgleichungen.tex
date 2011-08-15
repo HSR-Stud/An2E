@@ -2,35 +2,43 @@
 
 \subsection{L"osen von Differentialgleichungen}
 
-\subsubsection{Trennung von Variabeln \formelbuch{545}}
+\subsubsection{Trennung von Variabeln / Separation \formelbuch{545}}
 \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
 \textbf{Form:} $y' = f(x) g(y)$ &
 \textbf{Vorgehen:}              &
-$\frac{y'}{g(y)} = f(x)$, nun ist die DGL beidseitig nach x integrierbar\\  &&
-($dx = \frac{dy}{y'}$): $\int \frac{1}{g(y)} dy = \int f(x) dx$ 
+1. DGL umstellen: $\frac{y'}{g(y)} = f(x)$ \\ &&
+2. Beidseitig nach x integrieren wobei $dx = \frac{dy}{y'}$ \\ &&
+3. Genzen anpassen: $\int_{y_0=y(x_0)}^{y} \frac{1}{g(y)} dy =
+\int_{x}^{x_0}f(x) dx$
 \end{tabular}
 
 \subsubsection{Lineartermsubstitution \formelbuch{545}}
 \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
 \textbf{Form:} $y'=f(ax+by+c)$   &
 \textbf{Vorgehen:}               &
-1. Substitution: $z=ax+by+c \qquad z'=a+by' =a+bf(z)$\\ &&
-$\int\frac{z'}{a+bf(z)} = \int 1$
+1. Substitution: $z=ax+by+c \qquad$ \\ &&
+3. Einsetzen in $z'=a+bf(z)$\\ &&
+2. Separation: $\frac{z'}{f(z)} = a + b$ wobei $z_0 = x_0 + y_0$
 \end{tabular}
 
 \subsubsection{Gleichgradigkeit}
 \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
 \textbf{Form:} $y'=f(\frac{y}{x})$ &
 \textbf{Vorgehen:}                &
-1. Substitution: $z=\frac{y}{x} \qquad
-z'=\frac{1}{x}(f(z)-z)$
+1. Substitution: $z=\frac{y}{x}$\\ &&
+2. Einsetzen in $z'=\frac{1}{x}(f(z)-z)$\\ &&
+3. Seperation: $\frac{z'}{f(z)-z} = \frac{1}{x}$ wobei $z_0 = \frac{y_0}{x_0}$ 
 \end{tabular}
 
 \subsubsection{Lineare Differentialgleichungen 1. Ordnung \formelbuch{546}}
 \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
 \textbf{Form:} $ y'+f(x)y = g(x) $ &
 \textbf{Vorgehen:}                 &
-$ y=e^{-\int f(x) dx}(k+\int g(x)e^{\int f(x)dx}dx)$
+Homogene Rechunug: $y_H = k \cdot e^{-\int f(x) \cdot dx}$\\ &&
+Inhomogene Rechunug: $y_P = (\int g(x) \cdot e^{\int f(x) \cdot dx} \cdot dx)
+\cdot e^{-\int f(x) \cdot dx}$\\ &&
+Allgemeine Lösung: $y = y_H + y_P$ wobei $k = \frac{y_0 - y_P(x_0)}{e^{\int
+f(x_0) \cdot dx)}}$
 \end{tabular}
 
 \subsection{Lineare Differentialgleichung 2. Ordnung mit konstanten 
@@ -42,57 +50,75 @@ Koeffizienten \formelbuch{564}}
 \textbf{Inhomogene Differentialgleichung:} $f(x)\neq 0$
 \end{tabular}
 
-\subsubsection{Allgemeine L"osung einer homogenen DGL:\quad\subsubadd{$\quad
-Y_H$}}
-\textbf{Charakteristisches Polynom}
-$\qquad\underline{\lambda^2+a_1\cdot\lambda+a_0=0}$ \hspace{1cm}von
-$\qquad\underline{y''+a_1\cdot y'+a_0\cdot y=0}$ 
-$\qquad(\lambda_{1,2} = -\frac{a_1}{2} \pm \frac{\sqrt{a_1^2 - 4a_0}}{2})$\\ \\
+\subsubsection{Homogene L"osung $y_H$}
 \begin{tabular}{p{8cm}p{8cm}}
-Falls $\lambda_1\neq \lambda_2$ und $\lambda_{1,2} \in R$:&
-$Y_H=A_1e^{\lambda_1x}+A_2e^{\lambda_2x}$\\
-Falls $\lambda_1=\lambda_2$ und $\lambda_{1,2} \in R$:    &
-$Y_H=e^{\lambda_1x}(A_1+A_2\cdot x)$\\
-Falls $\lambda_{1,2}=-\frac{a_1}{2}\pm j\alpha$:          &
-$Y_H=e^{-\frac{1}{2}a_1x}(A_1cos(\alpha x) +A_2sin(\alpha x))$\\
+\textbf{Charakteristisches Polynom:} \newline
+$\qquad\lambda^2+a_1\cdot\lambda+a_0=0$ \quad
+$\lambda_{1,2} = -\frac{a_1}{2} \pm \sqrt{\frac{{a_1}^2}{4}+a_0}$ &
+\textbf{Diskriminante:} \newline
+$D = \frac{{a_1}^2}{4}+a_0$ 
+\end{tabular} \\ \\
+
+\begin{tabular}{p{4cm}p{12cm}}
+Falls $D > 0$:&
+$y_H=A_1e^{\lambda_1x}+A_2e^{\lambda_2x}$\\
+Falls $D = 0$:&
+$y_H=e^{\lambda_1x}(A_1+A_2\cdot x)$\\
+Falls $D < 0$:&
+$y_H=e^{-\frac{1}{2}a_1x}(A_1 \cdot cos(\sqrt{|D|} x) +A_2 \cdot sin(\sqrt{|D|}
+x))$
 \end{tabular}
 
-\subsubsection{Allgemeine L"osung einer inhomogenen
-DGL:\quad\subsubadd{$y=Y_H+y_P$}}
+\subsubsection{Partikuläre Lösung $y_P$ durch Faltung}
+$y_P(x)=\int\limits_{x_o}^{x} g(x+x_0-t) \cdot f(t) \dot dt$ \\
 
-\subsubsection{Grundl"oseverfahren einer inhomogenen DGL:\quad\subsubadd{$\quad
-y_P$}} Homogene DGL: $y''+a_1\cdot y'+a_0\cdot y=0$  f"ur die  $g(x_0)=0$  und
-$g'(x_0)=1$  gilt, ist:\\
-$$y_P(x)=\int\limits_{x_o}^{x} g(x+x_0-t)\cdot f(t)dt$$\\
-die partikul"are L"osung von $y''+a_1\cdot y'+a_0\cdot y=f(x)$
+$g(x)$ entspricht $y_H$ mit Standartanfang $g(x_0) = 0, g'(x_0)
+= 1$ (womit die Freiheitsgrade $A_1$ und $A_2$ bestimmt werden)
 
-\subsubsection{Der Ansatz einer inh. DGL in Form des
-St"orgliedes:\quad\subsubadd{$\quad y_P$}} $f(x)=p_n(x)$\hspace{9cm}($p_n(x)$
-und $q_n(x)$ sind Polynome vom gleichen Grad)\\
+\subsubsection{Partikuläre Lösung $y_P$ durch Form des Störglieds $f(x)$}
+ ($p_n(x) = \sum_{k=1}^{n}\alpha_k x^k$,
+$q_n(x)=\sum_{k=1}^{n} \beta_k x^k$, $r_n=\ldots$ und $s_n=\ldots$ sind Polynome vom
+n. Grad)\\ \\
+\textbf{Allgemeines Vorgehen:}\\
+1. Ermitteltes $y_P$ n mal ableiten \\
+2. Ableitungen in DGL einsetzen \\
+3. Koeffizientenvergleich \\ \\
+\underline{$f(x)=p_n(x)$}\\
 \begin{tabular}{p{8cm}p{4cm}}
-Fall a: $a_0\neq 0$:          & $y_P = q_n(x)$\\
-Fall b: $a_0 = 0 , a_1\neq 0$:& $y_P=x\cdot a_n(x)$\\
-Fall c: $a_0=a_1=0$:          & $y_P=x^2\cdot q_n(x)$\\
-\end{tabular}\\
-$f(x)=e^{bx}\cdot p_n(x)$\\
+$a_0\neq 0$:          & $y_P = q_n(x)$\\
+$a_0 = 0 , a_1\neq 0$:& $y_P=x\cdot a_n(x)$\\
+$a_0=a_1=0$:          & $y_P=x^2\cdot q_n(x)$\\
+\end{tabular}\\ \\ \\
+\begin{tabular}{p{2cm}p{10cm}}
+$x^n$: & $\beta_n = \frac{\alpha_n}{a_0}$ \\ 
+$x^{n-1}$: & $\beta_{n-1} = \frac{1}{a_0}(\alpha_{n-1} - a_1\beta_n \cdot n)$ \\
+$x^k$: & $\alpha_k = \beta_{k+2}(k+2)(k+1)+a_1 \cdot \beta_{k+1} \cdot (k + 1) +
+a_0 \cdot \beta_k $ (für $0 \leqq k \leqq n-2 $)
+\end{tabular} \\ \\
+
+\underline{$f(x)=e^{bx}\cdot p_n(x)$} \\
 \begin{tabular}{p{8cm}p{4cm}}
 Fall a: $b$ nicht Nullstelle des char. Polynoms:    &
 $y_P=e^{bx}\cdot q_n(x)$\\
 Fall b: $b$ einfache Nullstelle des char. Polynoms: &
 $y_P=e^{bx}\cdot x \cdot q_n(x)$\\
-Fall c: $b$ zweifache Nullstelle des char. Polynoms:&
-$y_P=e^{bx}\cdot x^2\cdot q_n(x)$\\
-\end{tabular}\\
-$f(x)=y''+a_1y'+a_0y=e^{cx}(p_n(x)\cos{bx}+q_n(x)\sin{bx})$\\
+Fall c: $b$ zweifache Nullstelle des char. Polynoms: &
+$y_P=e^{bx}\cdot x^2\cdot q_n(x)$
+\end{tabular}\\ \\ \\
+\begin{tabular}{p{2cm}p{9cm}}
+$x^n e^{bx}$: & $\beta_n = \frac{\alpha_n}{(2b+a_1)(n+1)}$ \\
+$x^k e^{bx}$: & $\beta_k = \frac{\alpha_k - \beta_{k+1} \cdot (k+2)(k+1)}{(2b+a_1)(k+1)}$
+\end{tabular} \\ \\
+
+\underline{$f(x)=e^{cx}(p_n(x)\cos{bx}+q_n(x)\sin{bx})$}\\
 \begin{tabular}{p{8cm}p{8cm}}
 Fall a: $c+jb$ \textbf{nicht} Lösung der char. Gleichung &
 $y_p=e^{cx}(r_n(x)\cos{bx}+s_n(x)\sin{bx})$ \\
 Fall b: $c+jb$ Lösung der char. Gleichung &
 $y_p=e^{cx}x(r_n(x)\cos{bx}+s_n(x)\sin{bx})$\\
-\end{tabular}
+\end{tabular}\\
 
-
-\subsubsection{Superpositionsprinzip}
+\subsubsection{Partikuläre Lösung durch Superpositionsprinzip}
 $f(x)=c_1f_1(x)+c_2f_2(x)$\\
 \begin{tabular}{p{8cm}p{4cm}}
 $y_1$ ist spezielle L"osung der DGL &
@@ -102,6 +128,9 @@ $y''+a_1\cdot y'+a_0\cdot y=c_2f_2(x)$ \\
 dann ist:                          &
 $y_P=c_1y_1+c_2y_2$\\
 \end{tabular}
+
+\subsubsection{Allgemeine L"osung einer DGL}
+$Y=y_H+y_P$
 
 \subsection{Lineare Differentialgleichung n. Ordnung mit konstanten 
 Koeffizienten \formelbuch{554}}
