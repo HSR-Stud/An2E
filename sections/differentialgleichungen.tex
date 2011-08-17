@@ -16,7 +16,7 @@
 \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
 \textbf{Form:} $y'=f(ax+by+c)$   &
 \textbf{Vorgehen:}               &
-1. Substitution: $z=ax+by+c \qquad$ \\ &&
+1. Substitution: $z=ax+by+c$ \\ &&
 3. Einsetzen in $z'=a+bf(z)$\\ &&
 2. Separation: $\frac{z'}{f(z)} = a + b$ wobei $z_0 = x_0 + y_0$
 \end{tabular}
@@ -25,7 +25,7 @@
 \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
 \textbf{Form:} $y'=f(\frac{y}{x})$ &
 \textbf{Vorgehen:}                &
-1. Substitution: $z=\frac{y}{x}$\\ &&
+1. Substitution:\quad $z=\frac{y}{x}$\\ &&
 2. Einsetzen in $z'=\frac{1}{x}(f(z)-z)$\\ &&
 3. Seperation: $\frac{z'}{f(z)-z} = \frac{1}{x}$ wobei $z_0 = \frac{y_0}{x_0}$ 
 \end{tabular}
@@ -54,9 +54,9 @@ Koeffizienten \formelbuch{564}}
 \begin{tabular}{p{8cm}p{8cm}}
 \textbf{Charakteristisches Polynom:} \newline
 $\qquad\lambda^2+a_1\cdot\lambda+a_0=0$ \quad
-$\lambda_{1,2} = -\frac{a_1}{2} \pm \sqrt{\frac{{a_1}^2}{4}+a_0}$ &
+$\lambda_{1,2} = -\frac{a_1}{2} \pm \sqrt{\frac{{a_1}^2}{4}-a_0}$ &
 \textbf{Diskriminante:} \newline
-$D = \frac{{a_1}^2}{4}+a_0$ 
+$D = \frac{{a_1}^2}{4}-a_0$ 
 \end{tabular} \\ \\
 
 \begin{tabular}{p{4cm}p{12cm}}
@@ -208,7 +208,7 @@ $\dot{x}=ax+by+f(t)$\\
 &
 $\dot{y}=cx+dy+g(t)$\\
 \textbf{Die allgem. L"osung ergibt sich aus der DGL:}&
-$\ddot{x}-(a+d)\dot{x}+(ad-bc)x=\dot{f}(t)-df(t)+bg(t)$\\
+$\ddot{x}-(a+d)\dot{x}+(ad-bc)x=\dot{f}(t)-d \cdot f(t)+b \cdot g(t)$\\
 &
 $y=\frac{1}{b}(\dot{x}-ax-f(t)))$\\
 \end{tabular}
