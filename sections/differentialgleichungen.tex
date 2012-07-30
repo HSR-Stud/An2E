@@ -37,7 +37,7 @@
 Homogene Rechunug: $y_H = k \cdot e^{-\int f(x) \cdot dx}$\\ &&
 Inhomogene Rechunug: $y_P = (\int g(x) \cdot e^{\int f(x) \cdot dx} \cdot dx)
 \cdot e^{-\int f(x) \cdot dx}$\\ &&
-Allgemeine Lösung: $y = y_H + y_P$ wobei $k = \frac{y_0 - y_P(x_0)}{e^{\int
+Allgemeine LÃ¶sung: $y = y_H + y_P$ wobei $k = \frac{y_0 - y_P(x_0)}{e^{\int
 f(x_0) \cdot dx)}}$
 \end{tabular}
 
@@ -69,13 +69,13 @@ $y_H=e^{-\frac{1}{2}a_1x}(A_1 \cdot cos(\sqrt{|D|} x) +A_2 \cdot sin(\sqrt{|D|}
 x))$
 \end{tabular}
 
-\subsubsection{Partikuläre Lösung $y_P$ durch Faltung}
+\subsubsection{PartikulÃ¤re LÃ¶sung $y_P$ durch Faltung}
 $y_P(x)=\int\limits_{x_o}^{x} g(x+x_0-t) \cdot f(t) \cdot dt$ \\
 
 $g(x)$ entspricht $y_H$ mit Standartanfang $g(x_0) = 0, g'(x_0)
 = 1$ (womit die Freiheitsgrade $A_1$ und $A_2$ bestimmt werden)
 
-\subsubsection{Partikuläre Lösung $y_P$ durch Form des Störglieds $f(x)$}
+\subsubsection{PartikulÃ¤re LÃ¶sung $y_P$ durch Form des StÃ¶rglieds $f(x)$}
  ($p_n(x) = \sum_{k=1}^{n}\alpha_k x^k$,
 $q_n(x)=\sum_{k=1}^{n} \beta_k x^k$, $r_n=\ldots$ und $s_n=\ldots$ sind Polynome vom
 n. Grad)\\ \\
@@ -93,7 +93,7 @@ $a_0=a_1=0$:          & $y_P=x^2\cdot q_n(x)$\\
 $x^n$: & $\beta_n = \frac{\alpha_n}{a_0}$ \\ 
 $x^{n-1}$: & $\beta_{n-1} = \frac{1}{a_0}(\alpha_{n-1} - a_1\beta_n \cdot n)$ \\
 $x^k$: & $\alpha_k = \beta_{k+2}(k+2)(k+1)+a_1 \cdot \beta_{k+1} \cdot (k + 1) +
-a_0 \cdot \beta_k $ (für $0 \leqq k \leqq n-2 $)
+a_0 \cdot \beta_k $ (fÃ¼r $0 \leqq k \leqq n-2 $)
 \end{tabular} \\ \\
 
 \underline{$f(x)=e^{bx}\cdot p_n(x)$} \\
@@ -112,13 +112,13 @@ $x^k e^{bx}$: & $\beta_k = \frac{\alpha_k - \beta_{k+1} \cdot (k+2)(k+1)}{(2b+a_
 
 \underline{$f(x)=e^{cx}(p_n(x)\cos{bx}+q_n(x)\sin{bx})$}\\
 \begin{tabular}{p{8cm}p{8cm}}
-Fall a: $c+jb$ \textbf{nicht} Lösung der char. Gleichung &
+Fall a: $c+jb$ \textbf{nicht} LÃ¶sung der char. Gleichung &
 $y_p=e^{cx}(r_n(x)\cos{bx}+s_n(x)\sin{bx})$ \\
-Fall b: $c+jb$ Lösung der char. Gleichung &
+Fall b: $c+jb$ LÃ¶sung der char. Gleichung &
 $y_p=e^{cx}x(r_n(x)\cos{bx}+s_n(x)\sin{bx})$\\
 \end{tabular}\\
 
-\subsubsection{Partikuläre Lösung durch Superpositionsprinzip}
+\subsubsection{PartikulÃ¤re LÃ¶sung durch Superpositionsprinzip}
 $f(x)=c_1f_1(x)+c_2f_2(x)$\\
 \begin{tabular}{p{8cm}p{4cm}}
 $y_1$ ist spezielle L"osung der DGL &
@@ -219,10 +219,10 @@ $y=\frac{1}{b}(\dot{x}-ax-f(t)))$\\
   \setlength{\parskip}{0pt}
   \setlength{\parsep}{0pt}
   
-  \item Starke Dämpfung: $D>0$
+  \item Starke DÃ¤mpfung: $D>0$
   \item Grenzfall; $D=0$
   \item Schwingfall / schawache D"ampfung: $D<0$
 \end{itemize}
 Frequenz: $\omega = \frac{\sqrt{\left|D\right|}}{2}$
-Dämpfung $\left|\delta\right| = \left|{\frac{a_1}{2}}\right|$
+DÃ¤mpfung $\left|\delta\right| = \left|{\frac{a_1}{2}}\right|$
 siehe: $\lambda_{1,2}= -\frac{a_1}{2}\pm \frac{\sqrt{{a_1}^2-4a_0}}{2}$
