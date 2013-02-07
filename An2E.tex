@@ -1,7 +1,6 @@
 %Dokumentinformationen
 \newcommand{\titleinfo}{Analysis 2E - Formelsammlung}
-\newcommand{\authorinfo}{F. Braun, L. Schmid, U. Giger, R. Koller, E. Ammann, S.
-Arnold}
+\newcommand{\authorinfo}{F. Braun, L. Schmid, U. Giger, R. Koller, E. Ammann, S.Arnold, C.Gwerder, S.Körner}
 \newcommand{\versioninfo}{$Revision: 813 $ - powered by \LaTeX}
 
 % standard header
@@ -24,36 +23,51 @@ Arnold}
            
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Integralrechnung \formelbuch{444}}
-\subsection{Integrationsmethoden \formelbuch{447ff}}
-	\begin{tabbing}
-       xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \= xxx \= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\kill  
-       Linearität\>		  
- 	   $\qquad\int{f(\alpha x+\beta )dx=\frac{1}{\alpha}\cdot F(\alpha x+
-		\beta)+C}$\\ \\
-  	   Partielle Integration\>
- 	   $\qquad\int\limits_a^b{u'(x)\cdot v(x)dx}=\biggl[ u(x)\cdot v(x) \biggr]_a^b
- 	   -\int\limits_a^b{u(x)\cdot v'(x)dx}$\\ \\ Substitution (Rationalisierung)\>
- 	   $\qquad t=\tan\frac{x}{2}, \qquad dx=\frac{2dt}{1+t^2} \qquad 
- 	   \sin  x=\frac{2t}{1+t^2} \qquad \cos x=\frac{1-t^2}{1+t^2}
-		\quad\int{R(\sin(x)\cos(x))dx}$\\ 
- 	   Allgemeine Substitution \> \>
-		$\int\limits_{a}^{b}{f(x)dx}=\int\limits_{g^{-1}(a)}^{g^{-1}(b)}{f(g(t))\cdot
-		g'(t)dt}\qquad t=g^{-1}(x)\qquad  \fbox{x=g(t)}\qquad dx=g'(t)\cdot dt$\\
- 	   Logarithmische Integration \>\>
- 	    $ \int{\frac{f'(x)}{f(x)}dx}=\ln|f(x)|+C	\qquad{(f(x)\neq 1)}$\\ \\
-	   Spezielle Form des Integranden \>\>
- 		$\int{f'(x)\cdot (f(x))^{\alpha} dx}= f(x)^{\alpha +1}\cdot
- 		\frac{1}{\alpha+1}+C \qquad{(\alpha \neq -1)}$\\ 
- 	   Differentiation\>\>
- 		$\int \limits ^{b} _{a} {f'(t)dt}=f(b)-f(a)$\\ \>\>
-		$\frac{d}{dx} \int \limits ^{x} _{1} {f(t)dt}=f(x)$
-    \end{tabbing}
+\section{Integralrechnung \formelbuch{483}}
+\subsection{Integrationsmethoden \formelbuch{486ff}}
+\renewcommand{\arraystretch}{2}
+\begin{tabular}{| l | l |}
+	\hline
+		Linearität &
+			$\int{f(\alpha x+\beta )dx=\frac{1}{\alpha}\cdot F(\alpha x+\beta)+C}$ \\
+	\hline
+		Partielle Integration &
+			$\int\limits_a^b{u'(x)\cdot v(x)dx}=\biggl[ u(x)\cdot v(x) \biggr]_a^b-\int\limits_a^b{u(x)\cdot v'(x)dx}$ \\
+	\hline
+		Weierstrass-Substitution\formelbuch{494} &
+			$t=\tan\frac{x}{2}, \qquad dx=\frac{2dt}{1+t^2}$
+			$\qquad \sin  x=\frac{2t}{1+t^2}$
+			$\qquad \cos x=\frac{1-t^2}{1+t^2} \quad\int{R(\sin(x),\cos(x))dx}$ \\
+	\hline
+		Allgemeine Substitution &
+			$\int\limits_{a}^{b}{f(x)dx}=\int\limits_{g^{-1}(a)}^{g^{-1}(b)}{f(g(t))\cdot g'(t)dt}$
+			$\qquad t=g^{-1}(x)$
+			$\qquad  \fbox{x=g(t)}\Leftrightarrow^{d(...)} dx=g'(t)\cdot dt$ \\
+	\hline
+		Logarithmische Integration &
+			$\int{\frac{f'(x)}{f(x)}dx}=\ln|f(x)|+C$
+			$\qquad {(f(x)\neq 1)}$
+			$\qquad y'(x)\cdot dx = dy \rightarrow$ allg. gültig\\
+	\hline
+		Potenzregel &
+			$\int{f'(x)\cdot (f(x))^{\alpha} dx}=\frac{f(x)^{\alpha +1}}{\alpha+1}+C$
+			$\qquad{(\alpha \neq -1)}$ \\
+	\hline
+		Differentiation &
+			$\int \limits ^{b} _{a} {f'(t)dt}=f(b)-f(a)$
+			$\qquad \frac{d}{dx} \int \limits ^{x} _{1} {f(t)dt}=f(x)$ \\
+	\hline
+\end{tabular}
+\renewcommand{\arraystretch}{1}
 
-\subsubsection{Einige unbestimmte Integrale \formelbuch{1053 ff}}
+
+\subsubsection{Einige unbestimmte Integrale \formelbuch{1074ff}}
 \includegraphics[width=17.7cm]{./bilder/integrale.png} 
 
-\subsection{Uneigentliche Integrale}
+
+
+
+\subsection{Uneigentliche Integrale\formelbuch{510}}
 	Uneigentliches Integral heisst, dass entweder eine \textbf{unbeschränkte
 	Funktion} integriert wird, oder eine Funktion über einen \textbf{unbeschränkten Integrationsberech} 
 	integriert wird.$\\$
@@ -61,14 +75,13 @@ Arnold}
     
 	Für unbeschränkte Funktionen:$\\$
 	$I =\int\limits _{a}^{c}f(x)dx=
-	\lim\limits_{t\to 
-	b-}\int\limits_{a}^{t}f(x)dx+\lim\limits_{t\to b+}\int\limits_{t}^{c}f(x)dx\\
+	\lim\limits_{t\uparrow b}\int\limits_{a}^{t}f(x)dx+\lim\limits_{t\downarrow b}\int\limits_{t}^{c}f(x)dx\\
 	\\$ Für die unbeschränkte Integration:$\\$
 	$I =\int\limits _{a} ^{\infty} f(x)dx= \lim \limits_{t\to \infty}\int \limits
 	_{a} ^{t}f(x)dx;\\$
 	$I =\int\limits ^{a} _{-\infty} f(x)dx= \lim \limits_{t\to -\infty}\int
 	\limits _{t} ^{a}f(x)dx; \\$
-	$I =\int\limits _{-\infty} ^{\infty} f(x)dx = \lim \limits_{t_1\to \infty} \lim
+	$I =\int\limits _{-\infty} ^{\infty} f(x)dx = \lim \limits_{t_1\to -\infty} \lim
 	\limits
 	_{t_2 \to  \infty}\int \limits _{t_1} ^{a}f(x)dx + \int\limits_{a}^{t_2}f(x)dx\\$
 	Beispiel: $\int\limits_{1}^{\infty}\frac{1}{x^2}dx=\lim\limits_{t\to \infty}\int\limits_{1}^{t}\frac{1}{x^2}dx=\lim\limits_{t\to \infty}-\frac{1}{t}+\frac{1}{1}=1$
@@ -77,115 +90,132 @@ Arnold}
     	\includegraphics[width=3cm]{./bilder/unbeschraenkteFunktion.png} $\\$
     	unbeschränkte Funktion
     \end{minipage}
+
 \subsubsection{Prinzip der Restfläche}
 	Wenn $\lim\limits_{t \rightarrow \infty} \int\limits^{\infty}_{t} f(x) dx = 0$, dann konvergiert
 	$\int\limits_a^{\infty} f(x) dx$ und umgekehrt.
 
 \subsubsection{Majorantenprinzip}
-	Um nachzuweisen, ob eine Funktion $|f(x)| \geq 0$ konvergiert, wird eine zweite
+	Um nachzuweisen, ob eine Funktion $|f(x)| \geq 0$ absolut konvergiert, wird eine zweite
 	Funktion $g(x) \geq |f(x)|$ (Majorante) gesucht. Konvergiert $\int\limits_a^{\infty} g(x) dx$,
-	dann konvergiert auch $\int\limits_a^{\infty} f(x) dx$. ($x \in [a, \infty)$)
+	dann konvergiert auch $\int\limits_a^{\infty} |f(x)| dx$ und somit konvergiert auch $\int\limits_a^{\infty} f(x) dx$. $\qquad x \in [a, \infty[$
 
 \subsubsection{Minorantenprinzip}
 	Um nachzuweisen, ob eine Funktion $f(x)$ divergiert, wird eine zweite
 	Funktion $0 \leq g(x) \leq f(x)$ (Minorante) gesucht. Divergiert
 	$\int\limits_a^{\infty} g(x) dx$,
-	dann divergiert auch $\int\limits_a^{\infty} f(x) dx$. ($x \in [a, \infty)$)
+	dann divergiert auch $\int\limits_a^{\infty} f(x) dx$. $\qquad x \in [a, \infty[$
 	
-\section{Funktionsgraphen}
-\begin{tabular}{lll}
-\parbox{5.5cm}{
-	\textbf{e-Funktion} \\
-	%%$$e^x=\lim_{n \to \infty} (1+\frac{x}{n})^n$$				
-	\includegraphics[width=4.5cm]{./bilder/funktionen_e.png} \\ \\
-	
-	\textbf{Logarithmus-Funktion}\\
-	\includegraphics[width=4.5cm]{./bilder/funktionen_ln.png} 
-}
-& \parbox{5.5cm}{
-	\textbf{Trigonometrische Funktionen}\\
-	\includegraphics[width=4.5cm]{./bilder/funktionen_trigo.png} 
-}
-& \parbox{7cm}{
-	\textbf{Hyperbel Funktionen}\\
-	\includegraphics[width=6cm]{./bilder/funktionen_hyperbel.png} 
-}
-\end{tabular}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
+%\newpage
 \section{Anwendung der Differential- und Integralrechnung}
 
 \subsection{Beschreibungungsvarianten}
 	\begin{minipage}[t]{3.5cm}
 		Funktion (explizit) \\
 		$ y = f(x)$ \\
-        \tiny{(Bronstein Form 3.425)}
+        \tiny{(Bronstein S.49, 147)}
 	\end{minipage}
 	\begin{minipage}[t]{6cm} 		
 		Koordinatengleichung (implizit) \\
 		$ F(x,y) = 0 $ \\
-        \tiny{(Bronstein Form 3.424)}
+        \tiny{(Bronstein S.49)}
 	\end{minipage}
 	\begin{minipage}[t]{5.5cm} 		
-		Parameterform \\
+		Parameterform(Cartesisch) \\
 		$ \left( \begin{array} {l} x(t) \\ y(t) \end{array} \right) =
           \left( \begin{array} {l} \Psi(t) \\ \varphi(t) \end{array} \right)$\\
-        \tiny{(Bronstein Form 3.426)}
+        \tiny{(Bronstein S.49)}
 	\end{minipage} 
 	\begin{minipage}[t]{3cm}
     	Polarform x\\
     	$ r=f(\varphi) $ \\
-        \tiny{(Bronstein Form 3.427)}
     \end{minipage}\\
+
+	$\rightarrow$ Ordnung immer ohne $\sqrt{\text{ }}$\\	
 
 	\textit{Hat man die explizite Form gegeben, so hat man automatisch die
 	Implizite- und Parameter-Form}
 
-\subsection{Umrechnen diverser Systeme \formelbuch{(196)}}
-\begin{tabular}{lll}
-Parameter 
+\subsection{Umrechnen diverser Systeme \formelbuch{49, 197}}
+\begin{tabular}{| l l | l|}
+\hline Parameter 
 	& $\Rightarrow$ explizit
 	%& $x = f(t) \; \; y = g(t)$
-	& $\Longrightarrow t = f(x);\; y = g(f(x))$\\
-Ex- bzw. implizit 
-	& $\Rightarrow$ Polar
-	%& $y = f_1(x)$ bzw. $f_2(x,y) = C$
-	& $\Longrightarrow$ Ersetze $x$ durch $r
-\cos(\varphi)$ \& $y$ durch $r \sin(\varphi)$\\ 
-Polar 
-	& $\Rightarrow$ implizit
-	%& $r = f(\varphi)$
-	& $\Longrightarrow$ Ersetze $r \sin(\varphi)$ durch $y$, $r \cos(\varphi$ durch
-	$x$, $r$ durch $\sqrt{x^2 + y^2}$\\ 
-Polar
-	& $\Rightarrow$ Parameterform
-	%& $r = f(\varphi)$
-	& $\Longrightarrow \left( \begin{array} {l} x(\varphi) \\ y(\varphi) \end{array} \right) =
-          \left( \begin{array} {l} r(\varphi) \cos(\varphi) \\ r(\varphi) \sin(\varphi) \end{array}
-          \right)$ \\
-Explizit
+	& $ t = f(x);\; y = g(f(x))$\\
+\hline Explizit
 	& $\Rightarrow$ Parameter
 	%& $y = f(x)$
-	& $\Longrightarrow \left( \begin{array} {l} x(t) \\ y(t) \end{array} \right) =
-          \left( \begin{array} {l} x(t)) \\ t \end{array}
+	& $ \left( \begin{array} {l} x(t) \\ y(t) \end{array} \right) =
+          \left( \begin{array} {l} t \\ g(t) \end{array}
           \right)$ \\
-Einzelner Punkt  
+\hline Ex- bzw. implizit 
+	& $\Rightarrow$ Polar
+	%& $y = f_1(x)$ bzw. $f_2(x,y) = C$
+	&  Ersetze $x = r
+\cos(\varphi)$ ; $y = r \sin(\varphi)$\\ 
+\hline Polar 
+	& $\Rightarrow$ implizit
+	%& $r = f(\varphi)$
+	& Ersetze $r \sin(\varphi) = y$; $r \cos(\varphi)=x$; $r=\sqrt{x^2 + y^2}$\\ 
+\hline Polar
+	& $\Rightarrow$ Parameterform
+	%& $r = f(\varphi)$
+	& $\left( \begin{array} {l} x(\varphi) \\ y(\varphi) \end{array} \right) =
+          \left( \begin{array} {l} r(\varphi) \cos(\varphi) \\ r(\varphi) \sin(\varphi) \end{array}
+          \right)$ \\
+\hline Einzelner Punkt  
 	& $\Rightarrow$ Polar
 	%& $(x,\; y)$
-	& $\Longrightarrow r = \sqrt{x^2 + y^2};\;
+	& $r = \sqrt{x^2 + y^2};\;
 	\varphi = \begin{cases}\arctan(\frac{y}{x}) + \pi 	&x < 0\\
              \arctan(\frac{y}{x}) 	& x > 0\\
              \frac{\pi}{2}			& x = 0;\; y > 0\\
              -\frac{\pi}{2}			& x = 0;\; y < 0\\
              \text{unbestimmt}		& x = y = 0\end{cases}$\\
+\hline
 \end{tabular}
 
 \subsection{Kurvenarten\formelbuch{202ff}}
+$ \left.\begin{matrix}
+	\text{bei `+`, Kurve auf linke Seite geöffnet}\\ 
+	\text{bei `-` , Kurve auf rechte Seite geöffnet}
+\end{matrix}\right\rbrace $ 
+bei Polarform
+
 \begin{tabular}{llll}
 \parbox{2.7cm}{
 \textbf{ } \\
+Implizit:\\
+Bemerkung:\\
+Polarform:\\
+Parameterform:\\
+$p, \epsilon$:
+}
+
+\parbox{6cm}{
+\textbf{Kreis\formelbuch{203}}\\
+$(x-x_0)^2 + (y - y_0)^2 = r^2$\\
+Mittelpunkt $(x_0, y_0)$; Radius $r$\\
+$r = \frac{p}{1 + \epsilon \cos(\varphi)}; \epsilon = 0$\\
+$x=x_0 + R\cos(t), y=y_0 + R\sin(t) $ \\
+$ p = \frac{b^2}{a}$
+} 
+
+\parbox{8cm}{
+\textbf{Ellipse\formelbuch{204}}\\
+$(\frac{x-x_0}{a})^2 + (\frac{y-y_0}{b})^2 = 1$\\
+Mittelpunkt $(x_0, y_0)$; Halbachsen $a$, $b$\\
+$r = \frac{p}{1 + \epsilon \cos(\varphi)}; 0 < \epsilon < 1 \qquad$ (rechter Brennpunkt)\\
+$x = a\cos(t), y = b\sin(t) \qquad$ um $P(0,0)$ \\
+$\epsilon = \frac{c}{a}$
+}\\ \\
+
+
+\parbox{2.7cm}{
+\textbf {}\\
 Implizit:\\
 Bemerkung:\\
 Polarform:\\
@@ -193,43 +223,22 @@ Parameterform:
 }
 
 \parbox{6cm}{
-\textbf{Kreis\formelbuch{202}}\\
-$(x-x_0)^2 + (y - y_0)^2 = r^2$\\
-Mittelpunkt $(x_0, y_0)$; Radius $r$\\
-$r = \frac{p}{1 + \epsilon \cos(\varphi)}; \epsilon = 0$ \\
-$x=x_0 + R\cos(t), y=y_0 + R\sin(t)$
-}
-
-\parbox{8cm}{
-\textbf{Ellipse\formelbuch{204}}\\
-$(\frac{x-x_0}{a})^2 + (\frac{y-y_0}{b})^2 = 1$\\
-Mittelpunkt $(x_0, y_0)$; Halbachsen $a$, $b$\\
-$r = \frac{p}{1 + \epsilon \cos(\varphi)}; 0 < \epsilon < 1$\\
-$x = a\cos(t), y = b\sin(t)$
-}\\ \\
-
-\parbox{2.7cm}{
-\textbf {}\\
-Implizit:\\
-Bemerkung:\\
-Polarform:\\
-Parameterhform:
-}
-
-\parbox{6cm}{
 \textbf{Hyperbel\formelbuch{206}}\\ 
 $(\frac{x}{a})^2 - (\frac{y}{b})^2 = 1; -(\frac{x}{a})^2 + (\frac{y}{b})^2 =1$\\ 
-\\
-$r = \frac{p}{1 + \epsilon \cos(\varphi)}; \epsilon > 1$\\
-$x= a \cosh(t), y = b \sinh(t) $
+Achsenkreuz in $P(0,0)$\\
+$r = \frac{p}{1 - \epsilon \cos(\varphi)}; \epsilon > 1_{(rechter Hyperbelast)}$\\
+$r = \frac{p}{1 + \epsilon \cos(\varphi)}_{(linker Hyperbelast)}$ \\
+$x= a \cosh(t), y = b \sinh(t) $ 
+
 }
 
 \parbox{8cm}{
 \textbf{Parabel\formelbuch{209}}\\
-$y= ax^2 + bx + c$\\
+$y^2 = 2p(x-x_0)$\\
 Parabeln mit Scheitelpunkt auf der vertikaler Achse\\
-$r = \frac{p}{1 + \epsilon \cos(\varphi)}; \epsilon = 1$\\
-$x=t, y = a t^2 + b t + c$
+$r = \frac{p}{1 - \epsilon \cos(\varphi)}; \epsilon = 1$\\
+$x= \frac{t^2}{2p}, y = t$\\
+$p=$Halbparameter (2$\cdot$Abstand Scheitel-Brennpunkt)
 }\\ \\
 
 \parbox{2.7cm}{
@@ -254,7 +263,7 @@ $ r = -a \frac{\cos(2\varphi)}{\cos(\varphi)},(a>0) $
 
 \end{tabular}
 
-\subsection{Gleichungen\formelbuch{234}, Mittelwerte\formelbuch{19ff}}
+\subsection{Gleichungen, Mittelwerte\formelbuch{19ff, 500}}
 \begin{tabular}{llll}
 	\textbf{Tangentengleichung} &
 	\textbf{Normalengleichung} &
@@ -263,39 +272,38 @@ $ r = -a \frac{\cos(2\varphi)}{\cos(\varphi)},(a>0) $
 	$y-y_0=f'(x_0)(x-x_0)$ &
 	$y-y_0=-\frac{1}{f'(x_0)}(x-x_0)$ &
 	$\bar{f} = \frac{1}{b-a} \int\limits_{a}^{b} f(x)dx$ &
-	$\bar{f} = \sqrt{\frac{1}{b-a} \int\limits_{a}^{b} f(x)^2dx}$
+	$\bar{f} = \sqrt{\frac{1}{b-a} \int\limits_{a}^{b} f(x)^2dx}$ \\
+	$\dot{x_0}(y-y_0) = \dot{y_0}(x-x_0)$ \\
 \end{tabular}
 	
 \subsection{Tangenten- \& Normalenabschnitt, Subtangente \& Subnormale\formelbuch{234ff}}
 
 \subsection{Abstandsformeln}
-\begin{minipage}{6.5cm}
-    \textbf{Hessesche Normalform\formelbuch{200f, 221}}\\
-    $x\cdot \cos\varphi_0 +y\cdot \sin\varphi_0=r_0$\\
-    \includegraphics[width=2.8cm]{./bilder/hessenorm.png}
-\end{minipage}
-\begin{minipage}{6.5cm}
-	\textbf{Geradengleichung} \\
-	$y - y_0 = m (x - x_0)$
-\end{minipage}
-\begin{minipage}{6cm}
+\begin{tabular}{p{7cm}p{5cm}p{6cm}l}
+	\textbf{Hessesche Normalform\formelbuch{200f, 221}} &
+	\textbf{Geradengleichung} &
 	\textbf{Abstand zum Ursprung} \\
-	$\frac{|y_0 - m \cdot x_0|}{\sqrt{m^2 + 1}}$
-\end{minipage}
+	$x\cdot \cos\varphi_0 +y\cdot \sin\varphi_0=r_0$ &
+	$y - y_0 = m (x - x_0)$ &
+	$\frac{|y_0 - m \cdot x_0|}{\sqrt{m^2 + 1}}$ \\
+	\includegraphics[width=6cm]{./bilder/hessenorm.png} \\
+\end{tabular}
 
-\subsection{Berührung höherer Ordnung}
+
+\subsection{Berührung in n-ter Ordnung}
 Zwei explizit gegebene Kurven $y = f(x)$ und $y = g(x)$ berühren einander im
 Punkt P $x_0, y_0$ von der Ordnung $n$, wenn die Funktionswerte und die ersten
 $n$ Ableitungen existieren und übereinstimmen.\\
 $f(x_0) = g(x_0);\; f'(x_0) = g'(x_0);\; f''(x_0) = g''(x_0);\;\ldots ;
 \;f^{(n)}(x_0) = g^{(n)}(x_0)\; \qquad f^{(n+1)}(x_0) \neq g^{(n+1)}(x_0)$
 
-\subsection{Scheitel \formelbuch{339}}
+\subsection{Scheitel \formelbuch{254}}
 Scheitelpunte sind Extremalwerte der Krümmungs- bzw. Krümmungsradiusfunktion.
 Falls bei $\kappa'(x)$ an der Stelle $x_0$ ein Vorzeichenwechsel besteht, existiert dort
 eine Extremalstelle. 
+$\qquad \kappa'(x) = 0; \kappa''(x) \neq 0$
 
-\subsection{Wichtige Formeln\formelbuch{232ff}}
+\subsection{Wichtige Formeln\formelbuch{248ff}}
 	\renewcommand{\arraystretch}{2}
 	\begin{tabular}[c]{ | p{5.1cm} | p{5.4cm} | l | }
 		\hline
@@ -311,14 +319,14 @@ eine Extremalstelle.
     	\\
 		
 		\hline
-		\multicolumn{3}{| l |}{\textbf{Bogenlänge \formelbuch{233, 466}}} \\
+		\multicolumn{3}{| l |}{\textbf{Bogenlänge \formelbuch{248}}} \\
     	\hline
     	$s=\int\limits_a^b{\sqrt{1+(f'(x))^2}dx}$ & 
     	$|s|=\int\limits_{t_1}^{t_2}{\sqrt{\dot{x}^2(t)+\dot{y}^2(t)}dt}$ &
-		$|s|=\int\limits_{\varphi_1}^{\varphi_2}{\sqrt{(r'(\varphi))^2+((\varphi))^2}d\varphi}$\\
+		$|s|=\int\limits_{\varphi_1}^{\varphi_2}{\sqrt{(r'(\varphi))^2+(r(\varphi))^2}d\varphi}$\\
 		
 		\hline		
-		\multicolumn{3}{| l |}{\textbf{Krümmung ebener Kurven \formelbuch{236}}}\\
+		\multicolumn{3}{| l |}{\textbf{Krümmung ebener Kurven \formelbuch{251}}}\\
     	\hline
     	$\kappa=\frac{f''(x)}{(\sqrt{1+(f'(x))^2})^3}$ &
     	$\kappa=\frac{\dot{x}(t)\ddot{y}(t)-\dot{y}(t)\ddot{x}(t)}{(\sqrt{(\dot{x}(t))^2+(\dot{y}(t))^2})^3}$ &
@@ -329,7 +337,7 @@ eine Extremalstelle.
 		konvex: $\kappa > 0 \qquad$ Wendepunkt: $\kappa = 0 \qquad$ Analog für konkav}\\
 		
 		\hline
-		\multicolumn{3}{| l |}{\textbf{Krümmungskreisradius \formelbuch{236f}}} \\
+		\multicolumn{3}{| l |}{\textbf{Krümmungskreisradius \formelbuch{251}} $\qquad r = |\frac{1}{\kappa}|$} \\
 		\hline
 		$r = \left|\frac{(\sqrt{1+(f'(x))^2})^3}{f''(x)} \right|$ &
 		$r = \left|\frac{(\sqrt{(\dot{x}(t))^2+(\dot{y}(t))^2})^3}
@@ -338,57 +346,74 @@ eine Extremalstelle.
 		{2(r'(\varphi))^2-r(\varphi)r''(\varphi)+(r(\varphi))^2} \right|$ \\
 		
 		\hline		
-		\multicolumn{3}{| l |}{\textbf{Flächeninhalt \formelbuch{465}}} \\
+		\multicolumn{3}{| l |}{\textbf{Flächeninhalt \formelbuch{504}} um x-Achse $\qquad$y-Achse: Umkerhfunktion $f^{-1}(x)$ von $y_0$ bis $y_1$ integrieren} \\
     	\hline
     	$A=\int\limits_a^b{f(x)}dx$  & 
     	$A=\frac{1}{2}\int\limits_{t_1}^{t_2}{[x(t)\dot{y}(t)-\dot{x}(t)y(t)]dt}$ &
 		$A=\frac{1}{2}\int\limits_{\varphi_1}^{\varphi_2}{(r(\varphi))^2d\varphi}$\\  
     	
 		\hline		
-		\multicolumn{3}{| l |}{\textbf{Volumen \formelbuch{467}}} \\
+		\multicolumn{3}{| l |}{\textbf{Volumen \formelbuch{506}} $\qquad$ \textbf{Symmertire!} nur 1.Hälfte der Kurve integrieren (pos. Meridian)} \\
     	\hline
 		$V=\pi\int\limits_a^b(f(x))^2dx$ & 
     	$V=\pi\left|\int\limits_{t_1}^{t_2}{(y(t))^2\dot{x}(t)dt}\right|$ &
 		$V=\pi\left|\int\limits_{\varphi_1}^{\varphi_2}{r^2(\varphi)\sin^2\varphi[r'(\varphi)\cos(\varphi)-r(\varphi)\sin(\varphi)]d\varphi}\right|$\\  
     	
 		\hline		
-		\multicolumn{3}{| l |}{\textbf{Oberflächeninhalt \formelbuch{466f}}} \\
+		\multicolumn{3}{| l |}{\textbf{Oberflächeninhalt \formelbuch{505}} $\qquad$ \textbf{Symmertire!} nur 1.Hälfte der Kurve integrieren (pos. Meridian)} \\
     	\hline
    		$O=2\pi\int\limits_a^b{|f(x)|\sqrt{1+(f'(x))^2}dx}$ & 
     	$O=2\pi\int\limits_{t_1}^{t_2}{|y(t)|\sqrt{\dot{x}^2(t)+(\dot{y}^2(t))}dt}$ &
 		$O=2\pi\int\limits_{\varphi_1}^{\varphi_2}{|r(\varphi)\sin\varphi|\sqrt{(r'(\varphi))^2+(r(\varphi))^2}d\varphi}$\\  
     	\hline
+		\multicolumn{3}{| l |}{Polar: \qquad $\sin \varphi =$ Drehung um Polgerade \qquad $\cos y =$ Drehung um y-Achse $(f = \frac{\pi}{2}) \qquad \rightarrow$ siehe Fläche} \\
+	\hline
+		\multicolumn{3}{| l |}{\textbf{Krümmungskreismittelpunkt}} \\
+	\hline
+		$x_c = x - \frac{\frac{dy}{dx}[1 + (\frac{dy}{dx})^2]}{\frac{d^2y}{dx^2}}$&
+		$ x_c = x - \frac{\dot{y}(\dot{x}^2 + \dot{y}^2)}{\dot{x}\ddot{y} - \ddot{x}\dot{y}} $ &
+		$x_c = r\cdot \cos\varphi - \frac{(r^2 + r'^2)(r\cdot \cos\varphi + r' \cdot \sin\varphi)}{r^2 + 2r'^2 - r\cdot r''}$\\
+
+		$y_c = y + \frac{1+ (\frac{dy}{dx})^2}{\frac{d^2y}{dx^2}}$&
+		$y_c = y + \frac{\dot{x}(\dot{x}^2 + \dot{y}^2)}{\dot{x}\ddot{y} - \ddot{x}\dot{y}} $ &
+		$y_c = r\cdot \sin\varphi - \frac{(r^2 + r'^2)(r\cdot \sin\varphi - r' \cdot \cos\varphi)}{r^2 + 2r'^2 - r\cdot r''}$\\
+	\hline
 	\end{tabular}
 	\renewcommand{\arraystretch}{1}
+
+\subsection{Evolute}
+Evolute = $\Sigma$ Krümmungskreiszentren\\
+$\left(\begin{matrix} x_c \\ y_c \end{matrix}\right) = \left(\begin{matrix} x \\  y \end{matrix}\right) + \frac{1}{\kappa}\overrightarrow{n}$
+
 \subsection{Orthogonaltrajektorien}
 \begin{tabular}{ll}
-\parbox{4.5cm}{
-\includegraphics[height=4cm]{./bilder/orthoTrajekt.png}
+\parbox{3cm}{
+\includegraphics[height=3cm]{./bilder/orthoTrajekt.png}
 }
-& \parbox{14.5cm}{
+& \parbox{15.5cm}{
 Die orthogonalen Trajektorien schneiden alle Kurven der gegebenen Kurvenschar
-$y=f(x,c)$ im rechten Winkel.\\
-Die DGL $F(x,y,y')$ der Kurve bestimmen, anschliessend $y'$ durch
-$-\frac{1}{y'}$ ersetzen.\\
+$y=f(x,c)$ (c bestimmen) im rechten Winkel.
+Die DGL $F(x,y,y')$ der Kurve bestimmen($y'$ ableiten, c einsetzen, wenn möglich für $f(x,c) = y$), anschliessend $y'$ durch
+$-\frac{1}{y'}$ ersetzen.
 $\Rightarrow$ ergibt die DGL der orthogonalen Trajektorien.\\
- \\
-Die Kreise sind Orthogonaltrajektorien der Hyperbeln und umgekehrt.
+Die Kreise sind Orthogonaltrajektorien der Hyperbeln und umgekehrt.\\
+$\frac{r'}{r} = f(\varphi , r) \qquad \underrightarrow{orthogonal}  \qquad \frac{r'}{r} = - \frac{1}{f(\varphi , r)}$
 }
 \end{tabular}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\section{Reihen\formelbuch{420, 427, 1045}}
+%newpage
+\section{Reihen\formelbuch{460, 1066}}
 
-\subsection{Zahlenreihen\formelbuch{422}}
+\subsection{Zahlenreihen\formelbuch{462}}
 $ s_n = \sum\limits_{k=1}^{n} a_k \qquad $ ist eine (unendliche) Reihe. Sie ist die Folge von Partialsummen einer bestehenden Folge $a_n$.
 
-\subsubsection{Konvergenz, Divergenz\formelbuch{422}}
+\subsubsection{Konvergenz, Divergenz\formelbuch{462}}
 Konvergiert die Reihe $< s_n >$ gegen die Summe $ s = \sum\limits_{k=1}^{\infty} a_k $ so ist sie konvergent. 
 Existiert der GW nicht, so ist sie divergent.
 
-\subsubsection{Konvergenzkriterien}
+\subsubsection{Konvergenzkriterien\formelbuch{463}}
 
 \paragraph{Cauchy-Kriterium} 
 Wenn zu jedem $\varepsilon > 0$ ein Index $n_0$ existiert, so dass für alle $m > n > n_0$ gilt: \\
@@ -400,92 +425,111 @@ Wenn die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ konvergent ist, so ist $\lim\l
 \paragraph{Divergenz}
 Ist $<a_n>$ divergent oder ist $\lim\limits_{n \to \infty} a_n \neq 0$, so ist die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ divergent.
 
-\paragraph{Majorantenkriterium\formelbuch{429}}
-Ist die Reihe $ \sum\limits_{n=1}^{\infty} c_n $ konvergent, so konvergiert auch die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ für $|a_n| \leq c_n$ (absolut). \\
-Dies gilt auch für $|a_n| \leq c_n$ erst ab einer Stelle $n_0 \in \mathbb{N}$.
+\paragraph{Majorantenkriterium\formelbuch{469}}
+Ist die Reihe $ \sum\limits_{n=1}^{\infty} c_n $ konvergent, so konvergiert auch die Reihe $ \sum\limits_{n=1}^{\infty} |a_n|$ und somit auch
+$\sum\limits_{n=1}^{\infty} a_n$ für $|a_n| \leq c_n$ (absolut).
+Dies gilt auch für $|a_n| \leq c_n$ erst ab einer Stelle $n_0 \in \mathbb{N}$.\\
+$\sum\limits_{n=1}^{m}a_k \leq |\sum\limits_{n=1}^{m}a_k| \leq \sum\limits_{n=1}^{m}|a_k| \leq \sum\limits_{n=1}^{m}c_n$
 
 \paragraph{Minorantenkriterium}
 Ist die Reihe $ \sum\limits_{n=1}^{\infty} d_n $ gegen $+\infty$ divergent, so gilt dies auch für die Reihe $ \sum\limits_{n=1}^{\infty} a_n $ 
-bei $a_n \geq d_n$. \\ Dies gilt auch für $a_n \geq d_n$ erst ab einer Stelle $n_0 \in \mathbb{N}$.
+bei $a_n \geq d_n$. \\ Dies gilt auch für $a_n \geq d_n$ erst ab einer Stelle $n_0 \in \mathbb{N}$. \\
 
-\paragraph{Reziprokkriterium}
-$ s = \sum\limits_{n=1}^{\infty} \frac{1}{n^\alpha} $ ist konvergent für $\alpha > 1$ und divergent für $\alpha \leq 1$.
+\begin{tabular}{| p{4.5cm} | p{13.5cm} |}
+	\hline
+		\textbf{Reziprokkriterium} & 
+		$ s = \sum\limits_{n=1}^{\infty} \frac{1}{n^\alpha} $ ist konvergent für $\alpha > 1$ und divergent für $\alpha \leq 1$.\\
+	\hline
+\end{tabular}
 
-\paragraph{Quotientenkriterium\formelbuch{424}}
-$ \lim\limits_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \alpha $ der Reihe $ \sum\limits_{n=1}^{\infty} a_n $ \\
-$\alpha < 1 \Rightarrow$ (absolut) konvergent \hspace{3cm}
-$\alpha > 1 \Rightarrow$ divergent \hspace{4cm} 
-$\alpha = 1 \Rightarrow$ keine Aussage!
+\begin{tabular}{| p{4.5cm} | p{8.5cm} | p{4.5cm} |}
+	\hline
+		\textbf{Quotientenkriterium}\formelbuch{464} &
+		$ \lim\limits_{n \to \infty} \left|\frac{a_{n+1}}{a_n}\right| = \alpha $ der Reihe $ \sum\limits_{n=1}^{\infty} a_n$ &
+		$\alpha < 1$ (aboslut) konvergent \\
+	\cline{1-2}
+		\textbf{Wurzelkriterium}\formelbuch{464} &
+		$\lim\limits_{n \to \infty} \sqrt[n]{\left|a_n\right|} = \alpha $ der Reihe $ \sum\limits_{n=1}^{\infty} a_n$ &
+		$\alpha = 1$ keine Aussage! \\
+		&& $\alpha > 1$ divergent\\
+	\hline
+\end{tabular}
 
-\paragraph{Wurzelkriterium\formelbuch{424f}}
-$ \lim\limits_{n \to \infty} \sqrt[n]{\left|a_n\right|} = \alpha $ der Reihe $ \sum\limits_{n=1}^{\infty} a_n $ \\
-$\alpha < 1 \Rightarrow$ (absolut) konvergent\hspace{3cm}
-$\alpha > 1 \Rightarrow$ divergent \hspace{4cm} 
-$\alpha = 1 \Rightarrow$ keine Aussage!
-
-\paragraph{Integralkriterium\formelbuch{425}}
-$ \sum\limits_{n=1}^{\infty} f(n) $ ist konvergent, wenn das uneigentliche Integral $ \int\limits_{1}^{\infty} f(x) dx $ konvergent ist. \\
-Gilt nur, wenn $f$ auf $ [1, \infty) $ definiert und monoton fallend ist. Zudem muss $ f(x) \geq 0 $ für alle $x \in [1, \infty)$ sein.
- 
-\paragraph{Leibniz-Kriterium\formelbuch{426}}
-Die \textbf{alternierende} Reihe $ \sum\limits_{n=1}^{\infty} a_n $ ist konvergent, wenn die Folge $<\left|a_n\right|>$ eine monoton fallende Nullfolge ($\lim\limits_{n \to \infty}
-\left|a_n\right| = 0 $) ist.
-\\ Monotonie mittels Verhältnis ($ \left|\frac{a_{n+1}}{a_n}\right| $), Differenz ($ |a_{n+1}| - |a_n| $) oder \textit{vollständiger Induktion} beweisen.\\ 
-
+\begin{tabular}{| p{4.5cm} | p{13.5cm} |}
+	\hline
+		\textbf{Integralkriterium}\formelbuch{465} &
+		$\int\limits_{1}^{\infty}f(x)dx$ konvergent $\Leftrightarrow \sum\limits_{n=1}^{\infty}f(n)$ konvergent. \\
+		
+		&Gilt nur, wenn $f$ auf $ [1, \infty) $ definiert und monoton fallend ($f'(x) \leq 0$) ist. \\
+		&Zudem muss $ f(x) \geq 0 $ für alle $x \in [1, \infty)$ sein. \\
+	\hline
+		\textbf{Leibniz-Kriterium}\formelbuch{466} &
+		Die \textbf{alternierende} Reihe $ \sum\limits_{n=1}^{\infty} a_n $ ist konvergent, wenn die Folge $<\left|a_n\right|>$ eine monoton fallende Nullfolge ($\lim\limits_{n \to \infty}
+		\left|a_n\right| = 0 $) ist. Monotonie mittels Verhältnis ($ \left|\frac{a_{n+1}}{a_n}\right| $), Differenz ($ |a_{n+1}| - |a_n| $) oder \textit{vollständiger Induktion} beweisen.\\ 
+	\hline
+\end{tabular}
+	
 \paragraph{Abschätzung Restglied einer alternierenden konvergenten Reihe\formelbuch{426,430}}\qquad $|R_n| = |s-s_n|\leq |a_{n+1}|$
 
 
-\subsubsection{Bedingte und Absolute Konvergenz\formelbuch{425}}
+\subsubsection{Bedingte und Absolute Konvergenz\formelbuch{465}}
 Eine Reihe $\sum\limits_{n=1}^{\infty}a_n$ heisst \textbf{absolut konvergent}, wenn die
 Reihe $\sum\limits_{n=1}^{\infty}|a_n|$ konvergent ist.\\
-\textbf{Bedingt Konvergent:} Eine Reihe hat durch Umordnen einen anderen
-Grenzwert oder wird divergent.\\
-\textbf{Unbedingt Konvergent:} Durch Umordnen ändert sich der Grenzwert nicht.
 
-\subsubsection{Produkt von absolut konvergenten Reihen\formelbuch{426}} 
+\begin{tabular}{ p{4.5cm}  p{13.5cm}}
+	\textbf{Bedingt Konvergent:} &  Eine Reihe hat durch Umordnen einen anderen Grenzwert oder wird divergent (somit nicht absolut konvergent).\\
+	\textbf{Unbedingt Konvergent:} &  Durch Umordnen ändert sich der Grenzwert nicht.\\
+\end{tabular}
+
+\subsubsection{Produkt von absolut konvergenten Reihen\formelbuch{466}} 
 Gegeben sei: $\sum a_n=a$, \quad $\sum b_n=b, \quad \sum c_n = (\sum a_n) \cdot (\sum b_n) = c \quad $ so ist
 $ \quad c_n=\sum a_kb_{n-k+1} \quad $ und $ \quad c = a \cdot b $
 
 
 
-\subsection{Potenzreihen}
+\subsection{Potenzreihen\formelbuch{472}}
 
 \paragraph{Definition\formelbuch{432}} 
 Die Reihe $ \sum\limits_{n=0}^{\infty} a_n (x-x_0)^n $ heisst Potenzreihe mit Entwicklungspunkt $x_0$ und Koeffizienten $a_n$.
 
 \begin{tabular}{lll}
 \textbf{Geometrische Reihe\formelbuch{19}}
-	& $ \frac{a}{1-x} = a \cdot \sum\limits_{n=0}^{\infty} x^n$
-	& $(|x| < 1) \qquad$ Beidseitiges $\int \quad\Rightarrow\quad -a \cdot \ln{|x-1|} 
-= a \cdot \sum\limits_{n=1}^{\infty} \frac{x^{n}}{n} $ \\
-\textbf{Binominalreihe} 
-	& $ (1+x)^\alpha = \sum\limits_{n=0}^\infty \binom{\alpha}{n} x^n$
-	& $x \in (-1,1)$ \\
-\textbf{Taylor-Reihe\formelbuch{434, 1045}}
+	& $a \cdot \sum\limits_{n=0}^{\infty} q^n = \frac{a}{1-q}$
+	& $(|q| < 1) \qquad$ Beidseitiges $\int \quad\Rightarrow\quad a \cdot \sum\limits_{n=1}^{\infty} \frac{q^{n}}{n} = -a \cdot \ln{|1-q|} $ \\
+\textbf{Binominalreihe\formelbuch{12}} 
+	& $\sum\limits_{n=0}^\infty \binom{\alpha}{n} x^n = (1+x)^\alpha$
+	& $x \in (-1,1)\qquad$ Binominalkoeff. $\binom{n}{k} = \frac{n!}{(n-k)!k!} $\\
+\textbf{Taylor-Reihe\formelbuch{474, 1066}}
 	& $ \sum\limits_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!}\cdot(x-x_0)^n$
 	& Taylor-Reihe von f bezüglich der Stelle $x_0$ \\
 \textbf{E-Funktion}
 	& \multicolumn{2}{l}{$e = \lim\limits_{n\to\infty} \left(1+\frac{1}{n}\right)^n = 
 	\sum\limits_{k=0}^{\infty}{\frac{1}{k!}} = 1 + \frac{1}{1} + \frac{1}{1\cdot 2} +
-	\frac{1}{1\cdot 2\cdot 3}  + \frac{1}{1\cdot 2\cdot 3\cdot4} + \cdots$}
+	\frac{1}{1\cdot 2\cdot 3}  + \frac{1}{1\cdot 2\cdot 3\cdot4} + \cdots$} \\
+
+	&$e^x = \sum\limits_{n=0}^{\infty}\frac{1}{n!} \cdot x^n$ &
+	für $x_0 = 0$
 \end{tabular}
 
-\subsubsection{Konvergenz\formelbuch{432}}
-Gegeben sei die Potenzreihe $ \sum\limits_{n=0}^{\infty} a_n x^n $ mit $ \lim\limits_{n \to \infty} \sqrt[n]{|a_n|} = a $ \\
+\subsubsection{Konvergenz\formelbuch{472}}
+Gegeben sei die Potenzreihe $ \sum\limits_{n=0}^{\infty} a_n x^n $ mit $ \lim\limits_{n \to \infty} \sqrt[n]{|a_n|} = a $ oder $\lim\limits_{n \to \infty} |\frac{a_{n+1}}{a_n}| = a$ \\
 Für $ a=0 $ ist die Potenzreihe für alle $ x \in \mathbb{R} $ absolut konvergent. \\
 Für $ a>0 $ ist die Potenzreihe für alle $x$ mit 
 $	\left\{ 	
 		\begin{array}{l} 
-			|x| < \frac{1}{a} = \rho \Rightarrow \text{ absolut konvergent.} \\
-			|x| > \frac{1}{a} = \rho \Rightarrow \text{ divergent.}
+			|x| < \frac{1}{a} = r \Rightarrow \text{ absolut konvergent.} \\
+			|x| > \frac{1}{a} = r \Rightarrow \text{ divergent.}
 		\end{array} 
 	\right. $ \\
 Ist die Folge $<\sqrt[n]{|a_n|}>$ nicht beschränkt, so ist die Potenzreihe nur für $x=0$ konvergent.
 
-\subsubsection{Konvergenzradius\formelbuch{432}}
-Jeder Potenzreihe kann ein Konvergenzradius $\rho$ zugeordnet werden. Wobei gilt $\rho = \frac{1}{a}$ mit $a = \lim\limits_{n \to \infty} \sqrt[n]{|a_n|} $. \\
-Für $a = 0$ gilt $\rho = \infty$. Wenn a nicht exisitiert (Folge divergent) ist $\rho = 0$. \\
-Berechnung mittels Quotientenkriterium: $ \rho = \lim\limits_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right|$
+\subsubsection{Abel's Theorem}
+$ \sum\limits_{n=0}^{\infty}a_n \cdot r^n$ konvergent  $= \lim\limits_{x \uparrow r}f(x)$ (= Summe der Reihe) 
+
+\subsubsection{Konvergenzradius\formelbuch{472}}
+Jeder Potenzreihe kann ein Konvergenzradius $r$ zugeordnet werden. Wobei gilt $r = \frac{1}{a}$ mit $a = \lim\limits_{n \to \infty} \sqrt[n]{|a_n|} $. \\
+Für $a = 0$ gilt $r = \infty$. Wenn a nicht exisitiert (Folge divergent) ist $r = 0$. \\
+Berechnung mittels Quotientenkriterium: $ r = \lim\limits_{n \to \infty} \left| \frac{a_n}{a_{n+1}} \right| = \lim\limits_{n\to\infty} \frac{1}{\sqrt[n]{|a_n|}}$
 
 \subsubsection{Differentiation}
 Alle Potenzreihen mit einem $\rho > 0$ sind für alle $x \in (-\rho, \rho)$ beliebig oft (gliedweise) differenzierbar. \\
@@ -505,32 +549,62 @@ $\int \sum\limits_{n=0}^{\infty} a_n x^n dx =
 $\int\limits_0^x \sum\limits_{n=0}^{\infty} a_n t^n dt = 
 \sum\limits_{n=0}^{\infty} \frac{a_n}{n+1}\cdot x^{n+1} \qquad \text{ für alle } x \in (-\rho, \rho).$
 
+\subsection{einige Reihen}
+\begin{tabular}{| l | l | l | l |}
+	\hline
+		$\lim\limits_{n\to\infty}(1+\frac{x}{n})^n = e^x$ &
+		$\lim\limits_{n\to\infty}(\sqrt[n]{a}) = 1$ ($a > 0$ und const.) &
+		$\lim\limits_{n\to\infty}(\sqrt[n]{n}) = 1$ &
+		$\lim\limits_{n\to\infty}(\sqrt[n]{n^a}) = 1$ ($a$ const.)\\
+	\hline
+		$\lim\limits_{n\to\infty}(\sqrt[n]{|p(n)|}) = 1$ ($p(n) \neq 0$) &
+		$\lim\limits_{n\to\infty}(\frac{K}{n!}) = 0$ ($K$ const.) &
+		$\lim\limits_{n\to\infty}(\sqrt[n]{n!}) = +\infty$ &
+		$\lim\limits_{n\to\infty}(\sqrt[n]{\frac{K^n}{n!}}) = 0$ ($K > 0$ und const.)\\
+	\hline
+		$\lim\limits_{n\to\infty}(\frac{n}{\sqrt[n]{n!}}) = e$ &&&\\
+	\hline		
+\end{tabular}
+
+
+\includegraphics[height=20cm]{./bilder/reihen.png}
+
+$\sum\limits_{n=1}^{\infty} \frac{1}{n} \rightarrow$ ist divergent \\
+$\sum\limits_{n=1}^{\infty} \frac{1}{n^2} \rightarrow$ absolut konvergent gegen 1 (beweisen mit Integralkriterium)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
-\section{Differentialgleichungen}
+\section{Differentialgleichungen\formelbuch{543}}
 
-\subsection{Lösen von Differentialgleichungen}
+\subsection{Lösen von Differentialgleichungen 1.Ordnung}
 
-\subsubsection{Trennung von Variabeln \formelbuch{506}}
+\subsubsection{Piccard-Lindelöf}
+Die Funktion $f(x, u, u_1, ..., u_{n-1})$ sei in einer Umgebung der Stelle $(x_0, y_0, y_1, ..., y_{n-1}) \in \mathbf{R^{n+1}}$ stetig und besitzt dort stetige partielle Ableitungen
+nach $u, u_1, ..., u_{n-1}$ dann existiert in einer geeigneten Umgebung des Anfangspunktes $x_0$ genau eine Lösung des Anfangswertproblems\\
+$y^{(n)} = f(x, y, y', ...,y^{(n-1)})$ mit $y(x_0) = y_0, y'(x_0) = y_1, ..., y^{(n-1)}(x_0) = y_{n-1}$ \\ \\
+$\frac{\partial f}{\partial y}$ ... $\frac{\partial f}{\partial f^{(n-1)}}$ endlich beschränkt $\Rightarrow$ eindeutige Lösbarkeit
+
+
+\subsubsection{Trennung von Variabeln / Separation \formelbuch{545}}
 \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
 \textbf{Form:} $y' = f(x) g(y)$ &
 \textbf{Vorgehen:}              &
 $\frac{y'}{g(y)} = f(x)$, nun ist die DGL beidseitig nach x integrierbar\\  &&
-($dx = \frac{dy}{y'}$): $\int \frac{1}{g(y)} dy = \int f(x) dx$ 
+($dy = y'(x) dx$): $\int \frac{1}{g(y)} dy = \int f(x) dx$ 
 \end{tabular}
 
-\subsubsection{Lineartermsubstitution \formelbuch{506}}
+\subsubsection{Lineartermsubstitution/separierte Lösung\formelbuch{545}}
 \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
 \textbf{Form:} $y'=f(ax+by+c)$   &
 \textbf{Vorgehen:}               &
 1. Substitution: $z=ax+by+c \qquad z'=a+by' =a+bf(z)$\\ &&
-$\int\frac{z'}{a+bf(z)} = \int 1$
+$\int\limits_{x_0}^{x}\frac{z'}{a+bf(z)}d\tilde{x} = \int 1 d\tilde{x} \Rightarrow \int\limits_{z_0}^{z}\frac{1}{a+b(f\tilde{z}}d\tilde{z} = \int\limits_{x_0}^{x}1 d\tilde{x} \qquad [d\tilde{z} = \underbrace{(a+by')}_{z'} d\tilde{x}]$
 \end{tabular}
 
-\subsubsection{Gleichgradigkeit}
+\subsubsection{Gleichgradigkeit\formelbuch{545}}
 \begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
 \textbf{Form:} $y'=f(\frac{y}{x})$ &
 \textbf{Vorgehen:}                &
@@ -538,15 +612,15 @@ $\int\frac{z'}{a+bf(z)} = \int 1$
 z'=\frac{1}{x}(f(z)-z)$
 \end{tabular}
 
-\subsubsection{Lineare Differentialgleichungen 1. Ordnung \formelbuch{507}}
-\begin{tabular}{p{4cm}p{1.5cm}p{10.5cm}}
-\textbf{Form:} $ y'+f(x)y = g(x) $ &
+\subsubsection{Lineare Differentialgleichungen 1. Ordnung \formelbuch{546}}
+\begin{tabular}{p{4.5cm}p{1.5cm}p{10.5cm}}
+\textbf{Form:} $ y'+f(x)y = \underbrace{g(x)}_{\text{Störglied}} $ &
 \textbf{Vorgehen:}                 &
-$ y=e^{-\int f(x) dx}(k+\int g(x)e^{\int f(x)dx}dx)$
+$ y=e^{-\int f(x) dx}(k+\int g(x)e^{\int f(x)dx}dx) \qquad (k\in\mathbf{R})$
 \end{tabular}
 
 \subsection{Lineare Differentialgleichung 2. Ordnung mit konstanten 
-Koeffizienten \formelbuch{525 ?}}
+Koeffizienten \formelbuch{564 ?}}
 \begin{tabular}{p{8cm}p{8cm}}
 \textbf{Form:} $y''+a_1\cdot y'+a_0\cdot y=f(x)$  &
 \textbf{Störglied:} $f(x)$\\
@@ -559,65 +633,111 @@ Koeffizienten \formelbuch{525 ?}}
 $\qquad\underline{\lambda^2+a_1\cdot\lambda+a_0=0}$ \hspace{1cm}von
 $\qquad\underline{y''+a_1\cdot y'+a_0\cdot y=0}$ 
 $\qquad(\lambda_{1,2} = -\frac{a_1}{2} \pm \frac{\sqrt{a_1^2 - 4a_0}}{2})$\\ \\
-\begin{tabular}{p{8cm}p{8cm}}
-Falls $\lambda_1\neq \lambda_2$ und $\lambda_{1,2} \in R$:&
-$Y_H=A_1e^{\lambda_1x}+A_2e^{\lambda_2x}$\\
-Falls $\lambda_1=\lambda_2$ und $\lambda_{1,2} \in R$:    &
-$Y_H=e^{\lambda_1x}(A_1+A_2\cdot x)$\\
-Falls $\lambda_{1,2}=-\frac{a_1}{2}\pm j\alpha$:          &
-$Y_H=e^{-\frac{1}{2}a_1x}(A_1cos(\alpha x) +A_2sin(\alpha x))$\\
+
+\begin{tabular}{p{2cm}p{5cm}p{6cm}p{4cm}}
+$(D > 0)$ &
+Falls $\lambda_1\neq \lambda_2$ und $\lambda_{1,2} \in R$: &
+$Y_H=Ae^{\lambda_1x}+Be^{\lambda_2x}$ & 
+$\rbrace$ starke Dämpfung\\
+
+$(D = 0)$ &
+Falls $\lambda_1=\lambda_2$ und $\lambda_{1,2} \in R$: &
+$Y_H=e^{\lambda_1x}(A+B\cdot x)$ & 
+$\rbrace$ aperiodischer Grenzfall\\
+
+$(D < 0)$ &
+Falls $\lambda_{1,2}=-\frac{a_1}{2}\pm j\alpha$: &
+$Y_H=e^{-\frac{1}{2}a_1x}(Acos(\alpha x) +Bsin(\alpha x))$ &
+$\rbrace$ schwache Dämpfung / Schwingfall \\
+\end{tabular}
+
+\begin{tabular}{p{2cm}p{5cm}p{2cm}p{4cm}}
+	Eigenfrequenz: & $\omega = \alpha = \frac{\sqrt{|a_1^2 - 4a_0|}}{2}$ &
+	Dämpfung: &  $|\delta| = |\lambda|$\\
 \end{tabular}
 
 \subsubsection{Allgemeine Lösung einer inhomogenen DGL:\quad\subsubadd{$y=Y_H+y_P$}}
 
 \subsubsection{Grundlöseverfahren einer inhomogenen DGL:\quad\subsubadd{$\quad y_P$}}
-Homogene DGL: $y''+a_1\cdot y'+a_0\cdot y=0$  für die  $g(x_0)=0$  und
-$g'(x_0)=1$  gilt, ist:\\
+Homogene DGL: $g(x) = Y_H$ mit den Anfangsbedingungen $g(x_0) = 0; g'(x_0) = 1$. Wenn möglich $x_0 = 0$.\\
 $$y_P(x)=\int\limits_{x_o}^{x} g(x+x_0-t)\cdot f(t)dt$$\\
-die partikuläre Lösung von $y''+a_1\cdot y'+a_0\cdot y=f(x)$
+
+
 
 \subsubsection{Der Ansatz einer inh. DGL in Form des Störgliedes:\quad\subsubadd{$\quad y_P$}}
-$f(x)=p_n(x)$\hspace{9cm}($p_n(x)$ und $q_n(x)$ sind Polynome vom gleichen Grad)\\
-\begin{tabular}{p{8cm}p{4cm}}
-Fall a: $a_0\neq 0$:          & $y_P = q_n(x)$\\
-Fall b: $a_0 = 0 , a_1\neq 0$:& $y_P=x\cdot a_n(x)$\\
-Fall c: $a_0=a_1=0$:          & $y_P=x^2\cdot q_n(x)$\\
-\end{tabular}\\
-$f(x)=e^{bx}\cdot p_n(x)$\\
-\begin{tabular}{p{8cm}p{4cm}}
-Fall a: $b$ nicht Nullstelle des char. Polynoms:    &
-$y_P=e^{bx}\cdot q_n(x)$\\
-Fall b: $b$ einfache Nullstelle des char. Polynoms: &
-$y_P=e^{bx}\cdot x \cdot q_n(x)$\\
-Fall c: $b$ zweifache Nullstelle des char. Polynoms:&
-$y_P=e^{bx}\cdot x^2\cdot q_n(x)$\\
+
+\begin{tabular}{|p{10cm}  p{8cm}|}
+	\hline 	$\mathbf{f(x)=p_n(x)}$ & 
+		($p_n(x)$ und $q_n(x)$ sind Polynome vom gleichen Grad)\\
+
+	 \hline	Fall a: $a_0\neq 0$:          & $y_P = q_n(x)$\\
+		Fall b: $a_0 = 0 , a_1\neq 0$:& $y_P=x\cdot q_n(x)$\\
+		Fall c: $a_0=a_1=0$:          & $y_P=x^2\cdot q_n(x)$\\
+		$a_0$ und $a_1$ beziehen sich auf die \textbf{linke Seite} der DGL & \\
+	\hline
+	\hline
+ 		$\mathbf{f(x)=e^{bx}\cdot p_n(x)}$ & \\
+	\hline	Fall a: $b$ nicht Nullstelle des char. Polynoms:    &
+		$y_P=e^{bx}\cdot q_n(x)$\\
+		Fall b: $b$ einfache Nullstelle des char. Polynoms: &
+		$y_P=e^{bx}\cdot x \cdot q_n(x)$\\
+		Fall c: $b$ zweifache Nullstelle des char. Polynoms:&
+		$y_P=e^{bx}\cdot x^2\cdot q_n(x)$\\
+	\hline
+	\hline
+		$\mathbf{f(x) = e^{\alpha x}(p_n(x)\cos \beta x + q_n(x)\sin \beta x)}$ & \\
+	 \hline	Fall a: $\alpha + j\beta$ \textbf{nicht Lösung} der charakteristischen Gleichung: &
+		$y_p = e^{\alpha x}(r_n(x)\cos \beta x + s_n(x)\sin \beta x)$ \\
+		Fall b: $\alpha + j\beta$ \textbf{Lösung} der charakteristischen Gleichung: &
+		$y_p = e^{\alpha x} \textbf{x}(r_n(x) \cos \beta x + s_n(x) \sin \beta x)$\\
+	\hline
 \end{tabular}
 
+
+\subsubsection{Vorgehen bei einer inh. DGL in Form des Störgliedes: }
+	\begin{enumerate}
+		\item 	$Y_H$ mit $\lambda_1$ und $\lambda_2$ berechnen
+		\item 	Ordnung $n$ anhand der r.h.s der DGL bestimmen\\
+			Koeffizient $b$ anhand der r.h.s der DGL bestimmen\\
+			(Achtung kann aus mehreren Elementen bestehen z.B. $x^2e^x + x$; Superposition)
+		\item 	Anhand der Störglied Tabellen $y_p$ bestimmen
+		\item 	$q_n = ax^n + bx^{n-1} + \dots + cx + d$
+		\item 	$y_p$ ableiten und in die \textbf{ l.h.s} der DGL einsetzen. $\qquad y_p'' + a_1 y_p' + a_0y_p = f(x)$
+		\item 	Koeffizienten bestimmen: $\textcolor{red}{x^2e^x}\cdot 18a + xe^x(6a + 12b) + e^x(2b + 6c) = \textcolor{red}{x^2e^x}$\\
+			\begin{tabular}{ll}
+				$18a = 1$ & $18a$ kommt 1mal in der r.h.s vor\\
+				$(6a + 12b) = 0$ & $(6a + 12b)$ kommt 0mal vor auf der r.h.s\\
+				$(2b + 6c) = 0$ & $(2b + 6c)$ kommt 0mal vor auf der r.h.s
+			\end{tabular}
+		\item 	Koeffizienten in $y_p$ einsetzen
+		\item 	Wenn das Störglied $f(x)$ aus mehreren Teilen besteht (z.B. $x^2e^x + x$), Störglied auseinander nehmen und in zwei Teile $x^2e^x$ und $x$ unterteilen und Schritt 3 - 6 wiederholen
+		\item 	$y = Y_H + y_{p1} + y_{p2} + \dots$
+
+	\end{enumerate}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newpage
+%\newpage
 \subsubsection{Superpositionsprinzip}
 $f(x)=c_1f_1(x)+c_2f_2(x)$\\
-\begin{tabular}{p{8cm}p{4cm}}
+\begin{tabular}{p{8cm}p{8cm}}
 $y_1$ ist spezielle Lösung der DGL &
-$y''+a_1\cdot y'+a_0\cdot y=c_1f_1(x)$ \\
+$y_1''+a_1\cdot y_1'+a_0\cdot y_1=c_1f_1(x)$ \\
 $y_2$ ist spezielle Lösung der DGL &
-$y''+a_1\cdot y'+a_0\cdot y=c_2f_2(x)$ \\
+$y_2''+a_1\cdot y_2'+a_0\cdot y_2=c_2f_2(x)$ \\
 dann ist:                          &
 $y_P=c_1y_1+c_2y_2$\\
 \end{tabular}
 
 \subsection{Lineare Differentialgleichung n. Ordnung mit konstanten 
-Koeffizienten \formelbuch{?}}
+Koeffizienten \formelbuch{554}}
 \begin{tabular}{p{8cm}p{8cm}}
 \textbf{Form:} &
 $\sum\limits_{k=0}^na_ky^{(k)}= y^{(n)}+a_{n-1}\cdot y^{(n-1)}+\ldots +a_0\cdot y=f(x)$\\
-\textbf{Algemeine Lösung der homogenen DGL:} &
-$g=c_1g_1+c_2g_2+\ldots +c_kg_k$\\
 \end{tabular}
 
-\subsubsection{Homogene Lösungen}
+\subsubsection{n-verschiedene Homogene Lösungen}
 \begin{tabular}{lll}
 Fall a: r reelle Lösungen $\lambda_1$: 
 	& $y_1=e^{\lambda_1x}$, $y_2=xe^{\lambda_1x}$, \ldots
@@ -631,9 +751,10 @@ x)$
 x}x^{k-1}\sin(\beta x)$
 	& Schwingfall\\
 \end{tabular}
+$Y_H = Ay_1 + By_2 + Cy_3 + ... + Ny_n$
 
 \subsubsection{Allgemeinste Lösung des partikulären Teils:}
-$$\underbrace{\sum_{k=0}^n a_k y^{(k)}}_{f(y,y',y'',\ldots)} = \underbrace{e^{\alpha x} (p_{m1}(x) \cos (\beta x) + q_{m2}(x) \sin (\beta x))}_{\text{Störglied}}$$
+$$\underbrace{\sum_{k=0}^n a_k y^{(k)}}_{f(y,y',y'',\ldots)} = \underbrace{e^{\alpha x} (p_{m1}(x) \cos (\beta x) + q_{m2}(x) \sin (\beta x))}_{\text{Störglied}} \qquad \lambda \text{ aus Homogenlösung}$$
 Unterscheide die Lösungen des charakteristischen Polynoms ($\lambda$):\hspace{5.5cm}mit m = max(m1, m2)\\
 \begin{tabular}{p{8cm}p{8.5cm}}
 Fall a: $\alpha + j\beta \neq \lambda$, so ist &
@@ -648,44 +769,40 @@ u-fache Resonanz
 \subsubsection{Grundlöseverfahren}
 \begin{tabular}{p{12cm}p{5cm}}
 $\begin{pmatrix}
-g(x_0)=  & 0 & = & c_1g_1(x_0)+c_2g_2(x_0)+\ldots +c_n(x_0)\\
-g'(x_0)= & 0 & = & c_1g_1'(x_0)+c_2g_2'(x_0)+\ldots +c_ng_n'(x_0)\\
+g(x_0)=  & 0 & = & Ay_1(x_0)+By_2(x_0)+\ldots +Ny_n(x_0)\\
+g'(x_0)= & 0 & = & Ay_1'(x_0)+By_2'(x_0)+\ldots +Ny_n'(x_0)\\
 \vdots  & \vdots & \\                            
-g^{(n-1)}(x_0)= & 1 & = & c_1g_1^{(n-1)}(x_0)+c_2g_2^{(n-1)}(x_0)+\ldots
-+c_ng_n^{(n-1)}(x_0)
+g^{(n-1)}(x_0)= & 1 & = & Ay_1^{(n-1)}(x_0)+By_2^{(n-1)}(x_0)+\ldots
++Ny_n^{(n-1)}(x_0)
 \end{pmatrix}$ &
 \begin{minipage}[t]{5cm}
 ergibt $c_1,\ldots ,c_n$ für\\
-$y_{P}(x)=\int_{x_0}^x{g(x+x_0-t)f(t)dt}$
+$y_{P}(x)=\int\limits_{x_0}^x{g(x+x_0-t)f(t)dt}$
 \end{minipage}
 \end{tabular}
 
-\subsubsection{Hornerschema\formelbuch{914}}
-\begin{minipage}[t]{9cm}
-- Pfeile $\Rightarrow$ Multiplikation\\
-- Zahlen pro Spalte werden addiert\\
-\includegraphics[width=6cm]{./bilder/Hornerschema_1.png}\\
-$x_1 \Rightarrow$ Nullstelle (muss erraten werden!!)\\
-oberste Zeile = zu zerlegendes Polynom
-\end{minipage}
-\begin{minipage}[t]{9cm}
-\textbf{Beispiel:}\\
-$f(x) = x^3-67x-126$\\
-\includegraphics[width=6cm]{./bilder/Hornerschema_2.png}\\
-$\Rightarrow f(x) = (x-x_1)(b_2x^2 + b_1x + b_0) = (x+2)(x^2-2x-63)$	
-\end{minipage}
+\subsubsection{Anfangswertproblem}
+	$y(x_0) = y_0 \qquad y'(x_0) = y_1 \qquad y''(x_0) = y_2 \qquad \dots \qquad y^{(n-1)}(x_0) = y_{n-1}$
+
 
 \subsection{Lineare Differentialgleichungssysteme erster Ordnung mit konstanten
 Koeffizienten}
 \begin{tabular}{p{8cm}p{8cm}}
-\textbf{Form:}&
-$\dot{x}=ax+by+f(t)$\\
-&
-$\dot{y}=cx+dy+g(t)$\\
-\textbf{Die allgem. Lösung ergibt sich aus der DGL:}&
-$\ddot{x}-(a+d)\dot{x}+(ad-bc)x=\dot{f}(t)-df(t)+bg(t)$\\
-&
-$y=\frac{1}{b}(\dot{x}-ax-f(t)))$\\
-\end{tabular}
+	\textbf{Form:}& $	\begin{matrix} \dot{x}=ax+by+f(t) \\ \dot{y}=cx+dy+g(t) \end{matrix} = \left(\begin{matrix} \dot{x} \\ \dot{y} \end{matrix}\right) = 
+				\left(\begin{matrix} a & b \\ c & d \end{matrix}\right) \left(\begin{matrix} x \\ y \end{matrix}\right) + \left(\begin{matrix} f(t) \\ g(t) \end{matrix}\right)$ \\
+
+
+	\textbf{Die allgem. Lösung ergibt sich aus der DGL:}&
+	$\underbrace{\ddot{x}-(a+d)\dot{x}+(ad-bc)x=\dot{f}(t)-df(t)+bg(t)}_{\text{normale DGL 2.Ordnung} \rightarrow \text{nach $x$ auflösen}}$\\
+	& $y=\frac{1}{b}(\dot{x}-ax-f(t)))$\\
+
+\textbf{Anfangsbedinung:} &
+$x_0(t_0) = x_0, \dot{x}_0(t_0) = ax_0 + by_0 + f(t_0)$
+\end{tabular} \\ \\
+\textbf{Anordnung beachten!} Gesuchte Grösse immer zu oberst (in diesem Fall ist die gesuchte Grösse $x$)
+
+\subsection{Faltung \formelbuch{794}}
+$f(x) = \int\limits_0^x f_1(x-t)f_2(t) dt \qquad$ Schreibweise $f = f_1 *  f_2$
+
 
 \end{document}
