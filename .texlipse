@@ -1,0 +1,13 @@
+#TeXlipse project settings
+#Mon Jul 25 10:59:38 CEST 2011
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=An2E.tex
+outputFile=An2E.pdf
+langSpell=en
+markDer=true
+srcDir=
