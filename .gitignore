@@ -1,3 +1,6 @@
 tmp/*
-An2E.pdf
 *.synctex.gz
+*.log
+*.aux
+*.out
+*.pdf
