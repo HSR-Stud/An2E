@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.6)  6 JUL 2013 11:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2013.7.26)  7 AUG 2013 19:11
 entering extended mode
 **An2E.tex
 ("D:\Dropbox\HSR\Analysis 2\Formelsammlung\An2E.tex"
@@ -6,10 +6,10 @@ LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
 croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
+lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
 ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
  lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
+german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
@@ -524,7 +524,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count109
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+(C:\Users\Lukas\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
@@ -573,21 +573,41 @@ Package color Info: Redefining color black on input line 12.
 Package color Info: Redefining color red on input line 13.
 Package color Info: Redefining color white on input line 14.
 
+(C:\Users\Lukas\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titlesec.sty
+Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
+\ttl@box=\box31
+\beforetitleunit=\skip56
+\aftertitleunit=\skip57
+\ttl@plus=\dimen131
+\ttl@minus=\dimen132
+\ttl@toksa=\toks31
+\titlewidth=\dimen133
+\titlewidthlast=\dimen134
+\titlewidthfirst=\dimen135
+)
+(C:\Users\Lukas\AppData\Roaming\MiKTeX\2.9\tex\latex\paralist\paralist.sty
+Package: paralist 2013/06/09 v2.4 Extended list environments
+\pltopsep=\skip58
+\plpartopsep=\skip59
+\plitemsep=\skip60
+\plparsep=\skip61
+\pl@lab=\toks32
+)
 ("D:\Dropbox\HSR\Analysis 2\Formelsammlung\An2E.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
-LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
+LaTeX Font Info:    ... okay on input line 31.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -626,16 +646,16 @@ LaTeX Font Info:    ... okay on input line 20.
 (C:\Users\Lukas\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count116
-\scratchdimen=\dimen131
-\scratchbox=\box31
+\scratchdimen=\dimen136
+\scratchbox=\box32
 \nofMPsegments=\count117
 \nofMParguments=\count118
-\everyMPshowfont=\toks31
+\everyMPshowfont=\toks33
 \MPscratchCnt=\count119
-\MPscratchDim=\dimen132
+\MPscratchDim=\dimen137
 \MPnumerator=\count120
 \makeMPintoPDFobject=\count121
-\everyMPtoPDFconversion=\toks32
+\everyMPtoPDFconversion=\toks34
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
@@ -643,9 +663,9 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 20.
-\AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 20.
+(lastpage)             ! on input line 31.
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring OFF on input line 31.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -655,88 +675,88 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 \c@section@level=\count122
 LaTeX Info: Redefining \Ref on input line 513.
 )
-LaTeX Info: Redefining \ref on input line 20.
-LaTeX Info: Redefining \pageref on input line 20.
-LaTeX Info: Redefining \nameref on input line 20.
+LaTeX Info: Redefining \ref on input line 31.
+LaTeX Info: Redefining \pageref on input line 31.
+LaTeX Info: Redefining \nameref on input line 31.
 
 ("D:\Dropbox\HSR\Analysis 2\Formelsammlung\An2E.out")
 ("D:\Dropbox\HSR\Analysis 2\Formelsammlung\An2E.out")
 \@outlinefile=\write4
-LaTeX Info: Redefining \Ref on input line 20.
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+LaTeX Info: Redefining \Ref on input line 31.
+LaTeX Font Info:    Try loading font information for U+msa on input line 37.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 37.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 26.
+(hyperref)                removing `math shift' on input line 37.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 26.
+(hyperref)                removing `subscript' on input line 37.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 26.
+(hyperref)                removing `math shift' on input line 37.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
+(hyperref)                removing `math shift' on input line 38.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 27.
+(hyperref)                removing `subscript' on input line 38.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 27.
+(hyperref)                removing `math shift' on input line 38.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 68.
+(hyperref)                removing `math shift' on input line 79.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 68.
+(hyperref)                removing `subscript' on input line 79.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 68.
+(hyperref)                removing `math shift' on input line 79.
 
-<./bilder/integrale.png, id=215, 2119.92pt x 1872.9975pt>
+<./bilder/integrale.png, id=299, 2119.92pt x 1872.9975pt>
 File: ./bilder/integrale.png Graphic file (type png)
 
 <use ./bilder/integrale.png>
-Package pdftex.def Info: ./bilder/integrale.png used on input line 70.
-(pdftex.def)             Requested size: 486.5423pt x 429.86581pt.
+Package pdftex.def Info: ./bilder/integrale.png used on input line 80.
+(pdftex.def)             Requested size: 458.08954pt x 404.71577pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 74.
+(hyperref)                removing `math shift' on input line 84.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 74.
+(hyperref)                removing `subscript' on input line 84.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 74.
+(hyperref)                removing `math shift' on input line 84.
 
-<./bilder/unbeschraenkteFunktion.png, id=216, 199.10385pt x 135.50626pt>
+<./bilder/unbeschraenkteFunktion.png, id=300, 199.10385pt x 135.50626pt>
 File: ./bilder/unbeschraenkteFunktion.png Graphic file (type png)
 
 <use ./bilder/unbeschraenkteFunktion.png>
 Package pdftex.def Info: ./bilder/unbeschraenkteFunktion.png used on input line
- 94.
+ 104.
 (pdftex.def)             Requested size: 85.35826pt x 58.09285pt.
 
-Overfull \hbox (30.67494pt too wide) in paragraph at lines 75--97
+Overfull \hbox (30.67494pt too wide) in paragraph at lines 85--107
 $[]$ $[]$ 
  []
 
@@ -745,92 +765,80 @@ $[]$ $[]$
 
 
  <D:/Dropbox/HSR/Analysis 2/Formelsammlung/bilder/integrale.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 137--139
+Underfull \hbox (badness 10000) in paragraph at lines 147--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--140
+Underfull \hbox (badness 10000) in paragraph at lines 130--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 151--152
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 146.
+(hyperref)                removing `math shift' on input line 153.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 146.
+(hyperref)                removing `subscript' on input line 153.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 146.
+(hyperref)                removing `math shift' on input line 153.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 185.
+(hyperref)                removing `math shift' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 185.
+(hyperref)                removing `subscript' on input line 191.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 185.
+(hyperref)                removing `math shift' on input line 191.
 
 [2 <D:/Dropbox/HSR/Analysis 2/Formelsammlung/bilder/unbeschraenkteFunktion.png>
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 270.
+(hyperref)                removing `math shift' on input line 276.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 270.
+(hyperref)                removing `subscript' on input line 276.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 270.
+(hyperref)                removing `math shift' on input line 276.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 283.
+(hyperref)                removing `math shift' on input line 289.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 283.
+(hyperref)                removing `subscript' on input line 289.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 283.
+(hyperref)                removing `math shift' on input line 289.
 
-<./bilder/hessenorm.png, id=245, 1585.925pt x 1072.005pt>
+<./bilder/hessenorm.png, id=327, 1585.925pt x 1072.005pt>
 File: ./bilder/hessenorm.png Graphic file (type png)
 
 <use ./bilder/hessenorm.png>
-Package pdftex.def Info: ./bilder/hessenorm.png used on input line 293.
+Package pdftex.def Info: ./bilder/hessenorm.png used on input line 299.
 (pdftex.def)             Requested size: 170.71652pt x 115.3855pt.
 
-Overfull \hbox (7.5472pt too wide) in paragraph at lines 286--295
+Overfull \hbox (7.5472pt too wide) in paragraph at lines 292--301
 [] 
  []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 304.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 304.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 304.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -845,115 +853,115 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 310.
 
 
-Overfull \hbox (19.18208pt too wide) in paragraph at lines 312--387
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 316.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 316.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 316.
+
+
+Overfull \hbox (19.18208pt too wide) in paragraph at lines 318--393
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--387
+Underfull \hbox (badness 10000) in paragraph at lines 318--393
 
  []
 
 [3 <D:/Dropbox/HSR/Analysis 2/Formelsammlung/bilder/hessenorm.png>]
-<./bilder/orthoTrajekt.png, id=253, 172.74292pt x 166.86731pt>
+<./bilder/orthoTrajekt.png, id=335, 172.74292pt x 166.86731pt>
 File: ./bilder/orthoTrajekt.png Graphic file (type png)
 
 <use ./bilder/orthoTrajekt.png>
-Package pdftex.def Info: ./bilder/orthoTrajekt.png used on input line 396.
-(pdftex.def)             Requested size: 88.36656pt x 85.35826pt.
+Package pdftex.def Info: ./bilder/orthoTrajekt.png used on input line 402.
+(pdftex.def)             Requested size: 73.63748pt x 71.13188pt.
 
-Overfull \hbox (3.0083pt too wide) in paragraph at lines 396--396
+Overfull \hbox (2.5056pt too wide) in paragraph at lines 402--402
 [][] 
  []
 
 
-Overfull \hbox (9.77362pt too wide) in paragraph at lines 393--407
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 399--413
 [] 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 411.
+(hyperref)                removing `math shift' on input line 417.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 411.
+(hyperref)                removing `subscript' on input line 417.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 411.
+(hyperref)                removing `math shift' on input line 417.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 413.
+(hyperref)                removing `math shift' on input line 419.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 413.
+(hyperref)                removing `subscript' on input line 419.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 413.
+(hyperref)                removing `math shift' on input line 419.
 
 [4 <D:/Dropbox/HSR/Analysis 2/Formelsammlung/bilder/orthoTrajekt.png (PNG copy)
 >]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 416.
+(hyperref)                removing `math shift' on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 416.
+(hyperref)                removing `subscript' on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 416.
+(hyperref)                removing `math shift' on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 420.
+(hyperref)                removing `math shift' on input line 426.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 420.
+(hyperref)                removing `subscript' on input line 426.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 420.
+(hyperref)                removing `math shift' on input line 426.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 439--441
+Underfull \hbox (badness 10000) in paragraph at lines 445--447
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 479.
+(hyperref)                removing `math shift' on input line 485.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 479.
+(hyperref)                removing `subscript' on input line 485.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 479.
+(hyperref)                removing `math shift' on input line 485.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--482
+Underfull \hbox (badness 10000) in paragraph at lines 486--488
 
  []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 488.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 488.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 488.
 
 [5]
 
@@ -970,124 +978,123 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 518.
+(hyperref)                removing `math shift' on input line 500.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 518.
+(hyperref)                removing `subscript' on input line 500.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 518.
+(hyperref)                removing `math shift' on input line 500.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `math shift' on input line 524.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 533.
+(hyperref)                removing `subscript' on input line 524.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 533.
+(hyperref)                removing `math shift' on input line 524.
 
 
-Overfull \hbox (23.8173pt too wide) in paragraph at lines 557--572
-[] 
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 539.
 
-<./bilder/reihen.png, id=271, 670.505pt x 733.74126pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 539.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 539.
+
+[6] <./bilder/reihen.png, id=361, 651.43375pt x 698.61pt>
 File: ./bilder/reihen.png Graphic file (type png)
 
 <use ./bilder/reihen.png>
-Package pdftex.def Info: ./bilder/reihen.png used on input line 574.
-(pdftex.def)             Requested size: 520.04526pt x 569.05511pt.
- [6] [7 <D:/Dropbox/HSR/Analysis 2/Formelsammlung/bilder/reihen.png (PNG copy)>
-]
+Package pdftex.def Info: ./bilder/reihen.png used on input line 564.
+(pdftex.def)             Requested size: 397.9704pt x 426.79134pt.
+
+Overfull \hbox (23.8173pt too wide) in paragraph at lines 571--588
+[] 
+ []
+
+[7 <D:/Dropbox/HSR/Analysis 2/Formelsammlung/bilder/reihen.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 584.
+(hyperref)                removing `math shift' on input line 590.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 584.
+(hyperref)                removing `subscript' on input line 590.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 584.
+(hyperref)                removing `math shift' on input line 590.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 589--593
+Underfull \hbox (badness 10000) in paragraph at lines 595--599
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 595.
+(hyperref)                removing `math shift' on input line 601.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 595.
+(hyperref)                removing `subscript' on input line 601.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 595.
+(hyperref)                removing `math shift' on input line 601.
 
 
-Overfull \hbox (7.80675pt too wide) in paragraph at lines 598--598
+Overfull \hbox (7.80675pt too wide) in paragraph at lines 604--604
 []\OT1/cmr/bx/n/10 Vorgehen:| 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 603.
+(hyperref)                removing `math shift' on input line 609.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 603.
+(hyperref)                removing `subscript' on input line 609.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 603.
+(hyperref)                removing `math shift' on input line 609.
 
 
-Overfull \hbox (7.80675pt too wide) in paragraph at lines 606--606
+Overfull \hbox (7.80675pt too wide) in paragraph at lines 612--612
 []\OT1/cmr/bx/n/10 Vorgehen:| 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 611.
+(hyperref)                removing `math shift' on input line 617.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 611.
+(hyperref)                removing `subscript' on input line 617.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 611.
+(hyperref)                removing `math shift' on input line 617.
 
 
-Overfull \hbox (7.80675pt too wide) in paragraph at lines 614--614
+Overfull \hbox (7.80675pt too wide) in paragraph at lines 620--620
 []\OT1/cmr/bx/n/10 Vorgehen:| 
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 619.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 619.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 619.
-
-
-Overfull \hbox (7.80675pt too wide) in paragraph at lines 622--622
-[]\OT1/cmr/bx/n/10 Vorgehen:| 
+Overfull \hbox (78.6791pt too wide) in paragraph at lines 618--626
+[] 
  []
 
 
@@ -1103,172 +1110,342 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 627.
 
 
+Overfull \hbox (7.80675pt too wide) in paragraph at lines 630--630
+[]\OT1/cmr/bx/n/10 Vorgehen:| 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 634.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 634.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 634.
+
+
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 10.00002pt
-(hyperref)                replaced by space on input line 635.
+(hyperref)                replaced by space on input line 642.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 635.
+(hyperref)                removing `math shift' on input line 642.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 10.00002pt
-(hyperref)                replaced by space on input line 635.
+(hyperref)                replaced by space on input line 642.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 635.
+(hyperref)                removing `subscript' on input line 642.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 635.
+(hyperref)                removing `math shift' on input line 642.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--640
+Underfull \hbox (badness 10000) in paragraph at lines 643--647
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 636--640
+Underfull \hbox (badness 10000) in paragraph at lines 643--647
 
  []
 
 
-Overfull \hbox (7.15018pt too wide) in paragraph at lines 659--659
+Overfull \hbox (7.15018pt too wide) in paragraph at lines 666--666
 []\OT1/cmr/m/n/10 Eigenfrequenz:| 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 10.00002pt
-(hyperref)                replaced by space on input line 663.
+(hyperref)                replaced by space on input line 670.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 663.
+(hyperref)                removing `math shift' on input line 670.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 663.
+(hyperref)                removing `subscript' on input line 670.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 663.
+(hyperref)                removing `subscript' on input line 670.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 663.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \hskip 10.00002pt
-(hyperref)                replaced by space on input line 665.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 665.
+(hyperref)                removing `math shift' on input line 670.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 10.00002pt
-(hyperref)                replaced by space on input line 665.
+(hyperref)                replaced by space on input line 672.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 665.
+(hyperref)                removing `math shift' on input line 672.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 665.
+(hyperref)                \hskip 10.00002pt
+(hyperref)                replaced by space on input line 672.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 666--667
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 672.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 672.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 673--674
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 667--668
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                \hskip 10.00002pt
-(hyperref)                replaced by space on input line 671.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 671.
+(hyperref)                removing `math shift' on input line 678.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                \hskip 10.00002pt
-(hyperref)                replaced by space on input line 671.
+(hyperref)                replaced by space on input line 678.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 671.
+(hyperref)                removing `subscript' on input line 678.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 671.
+(hyperref)                removing `math shift' on input line 678.
 
 [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 738.
+(hyperref)                removing `math shift' on input line 744.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 738.
+(hyperref)                removing `subscript' on input line 744.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 738.
+(hyperref)                removing `math shift' on input line 744.
 
 
-Overfull \hbox (14.89238pt too wide) in paragraph at lines 745--759
+Overfull \hbox (14.89238pt too wide) in paragraph at lines 751--765
 []
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 794--807
+Underfull \hbox (badness 10000) in paragraph at lines 798--811
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 808.
+(hyperref)                removing `math shift' on input line 812.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 808.
+(hyperref)                removing `subscript' on input line 812.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 808.
+(hyperref)                removing `math shift' on input line 812.
 
-
-AED: lastpage setting LastPage
 [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 812.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 812.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 820.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 820.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 820.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 826.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 826.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 826.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 828.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 828.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 828.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 842.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 842.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 842.
+
+
+Overfull \hbox (2.22218pt too wide) in paragraph at lines 843--867
+[] [] 
+ []
+
+
+Overfull \hbox (2.22218pt too wide) in paragraph at lines 843--867
+[] [] 
+ []
+
+
+Overfull \hbox (2.22218pt too wide) in paragraph at lines 843--867
+[] [] 
+ []
+
+
+Overfull \hbox (2.22218pt too wide) in paragraph at lines 843--867
+[] [] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 871.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 871.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 871.
+
+<./bilder/differential_fehlerrechnung.png, id=396, 204.5241pt x 136.95164pt>
+File: ./bilder/differential_fehlerrechnung.png Graphic file (type png)
+
+<use ./bilder/differential_fehlerrechnung.png>
+Package pdftex.def Info: ./bilder/differential_fehlerrechnung.png used on input
+ line 873.
+(pdftex.def)             Requested size: 142.26378pt x 95.26364pt.
+
+Overfull \hbox (30.67493pt too wide) in paragraph at lines 872--881
+$[]$ $[]$ 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 883.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 883.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 883.
+
+<./bilder/differential_mittelwertsatz.png, id=397, 172.7253pt x 98.2872pt>
+File: ./bilder/differential_mittelwertsatz.png Graphic file (type png)
+
+<use ./bilder/differential_mittelwertsatz.png>
+Package pdftex.def Info: ./bilder/differential_mittelwertsatz.png used on input
+ line 885.
+(pdftex.def)             Requested size: 85.35826pt x 48.57356pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 897.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 897.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 897.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 898--903
+
+ []
+
+[11 <D:/Dropbox/HSR/Analysis 2/Formelsammlung/bilder/differential_fehlerrechnun
+g.png> <D:/Dropbox/HSR/Analysis 2/Formelsammlung/bilder/differential_mittelwert
+satz.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 915.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 915.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 915.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 944.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 944.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 944.
+
+[12] [13] 
+AED: lastpage setting LastPage
+[14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1131.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1131.
  ("D:\Dropbox\HSR\Analysis 2\Formelsammlung\An2E.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 812.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 812.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1131.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1131.
+
 Package rerunfilecheck Info: File `An2E.out' has not changed.
-(rerunfilecheck)             Checksum: 5F660ACA0E152B9C176EBD74505CFE75;4586.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 812.
+(rerunfilecheck)             Checksum: A4B309DEB51A4C7D506C5D65E3245B38;6255.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1131.
  ) 
 Here is how much of TeX's memory you used:
- 7544 strings out of 493921
- 106811 string characters out of 3144877
- 222677 words of memory out of 3000000
- 10629 multiletter control sequences out of 15000+200000
+ 8017 strings out of 493921
+ 113686 string characters out of 3144876
+ 230614 words of memory out of 3000000
+ 11048 multiletter control sequences out of 15000+200000
  14644 words of font info for 56 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 33i,22n,45p,682b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 33i,22n,45p,690b,353s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
 <C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
 :/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/P
@@ -1288,9 +1465,9 @@ nts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 1/public/amsfonts/symbols/msbm10.pfb>
-Output written on An2E.pdf (10 pages, 2898557 bytes).
+Output written on An2E.pdf (14 pages, 2972351 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 450 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 524 PDF objects out of 1000 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
+ 628 words of extra memory for PDF output out of 10000 (max. 10000000)
 
